@@ -1,0 +1,51 @@
+Exercice 4:
+
+HSP90AB1 : 
+b2AR : 
+
+Exercice 5:
+
+Yeast two hybrid to detect protein interaction.
+HSP90 : 107 proteins interacting with it.
+HSP70 : not found in database.
+
+Exercice 6:
+
+Schéma : 
+- membrane plasmique (cytosol vers le bas)
+- recepteurs font le relais avec l'exterieur
+- recepteur = GCPR
+- changement de structure lors de la reception de l'agonist
+- proteine alpha va aussi se modifier apres fixation avec GCPR
+- voir fichier pymol, comparaison meme proteine dans 2 états (basculement d'une helice pour activer une autre prot apres reception de l'agoniste)
+
+Exercice 7 :
+
+
+
+
+
+Cours :
+
+Ce qu'on pensait pendant TME1 :
+1) 1 polymère d'aa = 1 chaîne
+2) 1 sequence ordonnée = 1 structure = 1 fonction
+3) structure 2ndaire/tertiaire
+4) structure figé
+5) 1 structure = 1 fonction
+6) ordre du nanometre
+
+Ce qu'on sait grâce au TME2 :
+1) souvent plusieurs chaines et pas forcement que des AA (modification post traductionnelles)
+2) 1 sequence ne donne pas forcement une structure (voir recepteur GCPR). Il peut y avoir plusieurs structures, plusieurs états, on appelle cela des structures intrinsiquement desordonnées (presque 1 tiers)
+3) structure casi tjr quaternaire
+4) structure souvent dynamique comme le GCPR
+5) souvent plusieurs structures nécessaire pour 1 fonction*
+6) souvent plus grand jusqu'a 1 micrometre 
+
+*Plusieurs genes doivent evoluer ensemble pour faire evoluer plusieurs proteines sinon problème dans la structure
+
+Recepteur : grosse famille de recepteur (medicament comme morphine se branche sur les GCPR), signaux recu = photon, ions, vitamines, molecule gustative, neurotransmetteurs, proteines etc... Topologie des GCPR très semblables même si 800+ types. Recepteur souvent dans une membrane
+
+Prediction structure : probleme car par exemple 20^300
+Prediction modification post traductionnelles : (20^300)^400
