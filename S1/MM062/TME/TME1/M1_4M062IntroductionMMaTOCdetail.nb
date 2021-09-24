@@ -1,0 +1,1319 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     33481,       1311]
+NotebookOptionsPosition[     27980,       1159]
+NotebookOutlinePosition[     28344,       1175]
+CellTagsIndexPosition[     28301,       1172]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["M1 : Table des mati\[EGrave]res Contents", "ContentsTitle"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\nPr\[EAcute]ambule",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:1"}]], 
+  "TOCPage"]
+}], "TOCTitle"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "I. Introduction (15 min)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:2"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. Description g\[EAcute]n\[EAcute]rale de ",
+ StyleBox["Mathematica ",
+  FontSlant->"Italic"],
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:3"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Description g\[EAcute]n\[EAcute]rale de ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:4"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. O\[UGrave] trouver ",
+ StyleBox["Mathematica ",
+  FontSlant->"Italic"],
+ "? ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:5"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "B. Utiliser Mathematica chez soi ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:6"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Sans installation: Bureau de L\[CloseCurlyQuote]UT\[CapitalEGrave]S",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:7"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. Avec installation chez vous sur votre ordinateur",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:8"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[TextData[{
+ "C. Utiliser ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " \[AGrave] L\[CloseCurlyQuote]UT\[CapitalEGrave]S ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["2",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:9"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "D. Plan de l\[CloseCurlyQuote]UE ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["2",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:10"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "E. Modes d\[CloseCurlyQuote]\[EAcute]valuation de l\[CloseCurlyQuote]UE ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["2",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:11"}]], 
+  "TOCPage"]
+}], "TOCSubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "II. D\[EAcute]buter avec ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " (15 min, 0h30)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["2",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:12"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. Interface utilisateur et Noyau",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["2",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:13"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. L\[CloseCurlyQuote]interface avec l\[CloseCurlyQuote]utilisateur",
+ " ",
+ "(\[OpenCurlyDoubleQuote]",
+ StyleBox["Front End",
+  FontSlant->"Italic"],
+ "\[CloseCurlyDoubleQuote])",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["2",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:14"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. Le noyau (\[OpenCurlyDoubleQuote]",
+ StyleBox["Kernel",
+  FontSlant->"Italic"],
+ "\[CloseCurlyDoubleQuote])",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["2",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:15"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "B. Menu Aide (Help)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["2",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:16"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Recherche par nom (mode dictionnaire)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["2",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:17"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. Recherche directe (en mode encyclop\[EAcute]dique, ",
+ StyleBox["i.e.",
+  FontSlant->"Italic"],
+ " par notions) ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["3",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:18"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "3. Et aussi : utilisation (\[EAcute]ventuelle) des ic\[OHat]nes",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["3",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:19"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[TextData[{
+ "C. Notebook = fichier ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " = NomDuFichier.nb",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["3",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:20"}]], 
+  "TOCPage"]
+}], "TOCSubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "III. Travailler avec ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " ",
+ "(1h30)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["3",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:21"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. Dans l\[CloseCurlyQuote]interface seule (45 min avec les exercices)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["3",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:22"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. La barre de fen\[EHat]tre",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["3",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:23"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. Types utilis\[EAcute]s de cellule",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["3",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:24"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "3. G\[EAcute]n\[EAcute]ration d\[CloseCurlyQuote]une cellule",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["4",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:25"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "4. \[CapitalEAcute]dition de texte ou d\[CloseCurlyQuote]une cellule",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["4",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:26"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "5. R\[EGrave]gle d\[CloseCurlyQuote]or \
+d\[CloseCurlyQuote]\[EAcute]criture",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["4",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:27"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "6. Feuille de style",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["4",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:28"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "7. Saisie et \[EAcute]dition d\[CloseCurlyQuote]expressions \
+math\[EAcute]matiques : Input ou Text",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["5",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:29"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "8. Raccourcis clavier",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["5",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:30"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "9. R\[EGrave]gle d\[CloseCurlyQuote]\[EAcute]criture",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["5",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:31"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "10. Embo\[IHat]tement et masquage des cellules",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["5",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:32"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "11. Sauvegarde du notebook",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["6",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:33"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "12. Exercices",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["6",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:34"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "B. Dans l\[CloseCurlyQuote]interface avec le noyau (45 min avec les \
+exercices)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["6",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:35"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Faire ex\[EAcute]cuter un calcul ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["6",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:36"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. Indexation des calculs et des r\[EAcute]sultats ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["6",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:37"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "3. L\[CloseCurlyQuote]ordre d\[CloseCurlyQuote]ex\[EAcute]cution est impos\
+\[EAcute] par l\[CloseCurlyQuote]utilisateur",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["6",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:38"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "4. \[OpenCurlyDoubleQuote]Running\[CloseCurlyDoubleQuote]",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["7",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:39"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "5. \[OpenCurlyDoubleQuote]Aborting\[CloseCurlyDoubleQuote]",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["7",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:40"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "6. Fonctions ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["7",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:41"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "7. L\[CloseCurlyQuote]essentiel de la syntaxe ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["7",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:42"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "8. Saisie d\[CloseCurlyQuote]expressions",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["8",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:43"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "9. Recherche par nom (mode dictionnaire) dans le noyau",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["8",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:44"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "10. R\[EGrave]gle d\[CloseCurlyQuote]or d\[CloseCurlyQuote]\[EAcute]criture",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["8",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:45"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "11. Sauvegarde du notebook",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["8",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:46"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "12. Exercices",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["9",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:47"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Exercices",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["10",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:48"}]], 
+  "TOCPage"]
+}], "TOCTitle"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "I. Interface",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["10",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:49"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. Mise en forme",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["10",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:50"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ StyleBox["\[Rule] ",
+  FontWeight->"Bold"],
+ "1. Les cellules et leur hi\[EAcute]rarchie",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["10",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:51"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "B. Saisie d\[CloseCurlyQuote]expressions",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["10",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:52"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ StyleBox["\[Rule] ",
+  FontWeight->"Bold"],
+ "1. Avec la palette Texte (Writing Assistant)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["10",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:53"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ StyleBox["\[Rule] ",
+  FontWeight->"Bold"],
+ "2. Avec la palette Input (Basic Math Assistant)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["10",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:54"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ StyleBox["\[Rule] ",
+  FontWeight->"Bold"],
+ "3. Avec la palette et les raccourcis clavier",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["10",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:55"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "II. Un tour introductif ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["10",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:56"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. Op\[EAcute]rations de base (symboliques avec pr\[EAcute]cision \
+arbitraire)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["11",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:57"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. \[CapitalEAcute]l\[EAcute]mentaire",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["11",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:58"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. Les trois op\[EAcute]rations",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["11",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:59"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "3. Valeurs num\[EAcute]riques approch\[EAcute]es N[]",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["11",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:60"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "4. Quelques tests utiles pour comprendre",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["11",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:61"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "5. Exemples r\[EAcute]capitulatifs",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["12",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:62"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[TextData[{
+ "B. Op\[EAcute]rations de base (num\[EAcute]riques)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["12",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:63"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "C. Nombres et Fonctions \[EAcute]l\[EAcute]mentaires",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["12",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:64"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Quelques constantes math\[EAcute]matiques",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["12",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:65"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. Quelques fonctions math\[EAcute]matiques",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["12",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:66"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "D. Fonctions",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["13",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:67"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Programmation proc\[EAcute]durale et fonctionnelle",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["13",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:68"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. Mode d\[CloseCurlyQuote]utilisation d\[CloseCurlyQuote]une fonction",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["13",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:69"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "3. Composition de fonctions, et \[EAcute]criture avec indentation \
+automatique",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["14",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:70"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "4. Arguments et Options des Fonctions : tracer de courbes",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["15",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:71"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "5. D\[EAcute]finition de nouvelle fonction par \
+l\[CloseCurlyQuote]utilisateur",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["16",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:72"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "6. \[CapitalEAcute]l\[EAcute]ments d\[CloseCurlyQuote]\[EAcute]tude de \
+fonction",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["17",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:73"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "E. Graphiques 2D, 3D, sons et animations",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["18",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:74"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Repr\[EAcute]sentation graphique",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["18",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:75"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. Repr\[EAcute]sentation sonore",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["18",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:76"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. Trac\[EAcute] de fonction en 3 dimensions - Animation 3D",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["18",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:77"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "I. Suppl\[EAcute]ments",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["18",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:78"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. Langage naturel",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["18",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:79"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Compl\[EAcute]tion automatique avec \[CloverLeaf]K",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["18",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:80"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. = Wolfram Alpha",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["19",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:81"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[TextData[{
+ "B. Step-by-step",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["19",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:82"}]], 
+  "TOCPage"]
+}], "TOCSubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "I. Annexes",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["19",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:83"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. Wolfram et autour",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["19",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:84"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Les Add-ons",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["19",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:85"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. Wolfram Demonstrations",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["20",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:86"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "3. Wolfram Alpha",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["20",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:87"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "4. Wolfram Education Portal",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["20",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:88"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "5. Livres num\[EAcute]riques disponibles \[AGrave] \
+l\[CloseCurlyQuote]UPMC",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["20",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:89"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "6. Livres imprim\[EAcute]s disponibles \[AGrave] l\[CloseCurlyQuote]UPMC",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["20",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:90"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[TextData[{
+ "B. Liens vers d\[CloseCurlyQuote]autres tutoriels/cours \[AGrave] l\
+\[CloseCurlyQuote]UPMC",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["21",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:91"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "C. Quelques autres outils et logiciels",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["21",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M1_4M062IntroductionMMaTxt.nb"], "c:92"}]], 
+  "TOCPage"]
+}], "TOCSubsection"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 752},
+WindowMargins->{{316, Automatic}, {Automatic, 50}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"HelpBrowser.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 65, 0, 61, "ContentsTitle"],
+Cell[CellGroupData[{
+Cell[648, 24, 243, 9, 36, "TOCTitle"],
+Cell[CellGroupData[{
+Cell[916, 37, 250, 9, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[1191, 50, 322, 11, 14, "TOCSubsection"],
+Cell[1516, 63, 330, 12, 14, "TOCSubsubsection"],
+Cell[1849, 77, 311, 12, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2197, 94, 262, 9, 14, "TOCSubsection"],
+Cell[2462, 105, 302, 9, 16, "TOCSubsubsection"],
+Cell[2767, 116, 283, 9, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[3065, 128, 345, 12, 16, "TOCSubsection"],
+Cell[3413, 142, 263, 9, 14, "TOCSubsection"],
+Cell[3679, 153, 302, 9, 14, "TOCSubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4018, 167, 321, 12, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[4364, 183, 263, 9, 14, "TOCSubsection"],
+Cell[4630, 194, 412, 14, 14, "TOCSubsubsection"],
+Cell[5045, 210, 343, 12, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5425, 227, 249, 9, 14, "TOCSubsection"],
+Cell[5677, 238, 273, 9, 14, "TOCSubsubsection"],
+Cell[5953, 249, 348, 12, 14, "TOCSubsubsection"],
+Cell[6304, 263, 296, 9, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[6615, 275, 324, 12, 14, "TOCSubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6976, 292, 314, 13, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[7315, 309, 300, 9, 14, "TOCSubsection"],
+Cell[7618, 320, 261, 9, 14, "TOCSubsubsection"],
+Cell[7882, 331, 269, 9, 14, "TOCSubsubsection"],
+Cell[8154, 342, 293, 9, 14, "TOCSubsubsection"],
+Cell[8450, 353, 301, 9, 16, "TOCSubsubsection"],
+Cell[8754, 364, 309, 10, 14, "TOCSubsubsection"],
+Cell[9066, 376, 252, 9, 14, "TOCSubsubsection"],
+Cell[9321, 387, 332, 10, 14, "TOCSubsubsection"],
+Cell[9656, 399, 254, 9, 14, "TOCSubsubsection"],
+Cell[9913, 410, 285, 9, 14, "TOCSubsubsection"],
+Cell[10201, 421, 279, 9, 14, "TOCSubsubsection"],
+Cell[10483, 432, 259, 9, 14, "TOCSubsubsection"],
+Cell[10745, 443, 246, 9, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11028, 457, 310, 10, 14, "TOCSubsection"],
+Cell[11341, 469, 269, 9, 14, "TOCSubsubsection"],
+Cell[11613, 480, 284, 9, 14, "TOCSubsubsection"],
+Cell[11900, 491, 353, 10, 14, "TOCSubsubsection"],
+Cell[12256, 503, 290, 9, 14, "TOCSubsubsection"],
+Cell[12549, 514, 291, 9, 14, "TOCSubsubsection"],
+Cell[12843, 525, 301, 12, 14, "TOCSubsubsection"],
+Cell[13147, 539, 334, 12, 14, "TOCSubsubsection"],
+Cell[13484, 553, 273, 9, 14, "TOCSubsubsection"],
+Cell[13760, 564, 287, 9, 14, "TOCSubsubsection"],
+Cell[14050, 575, 308, 9, 14, "TOCSubsubsection"],
+Cell[14361, 586, 259, 9, 14, "TOCSubsubsection"],
+Cell[14623, 597, 246, 9, 14, "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14930, 613, 235, 9, 22, "TOCTitle"],
+Cell[CellGroupData[{
+Cell[15190, 626, 240, 9, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[15455, 639, 247, 9, 14, "TOCSubsection"],
+Cell[15705, 650, 321, 11, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16063, 666, 271, 9, 70, "TOCSubsection"],
+Cell[16337, 677, 323, 11, 70, "TOCSubsubsection"],
+Cell[16663, 690, 326, 11, 70, "TOCSubsubsection"],
+Cell[16992, 703, 323, 11, 70, "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17364, 720, 252, 9, 70, "TOCSection"],
+Cell[CellGroupData[{
+Cell[17641, 733, 310, 10, 70, "TOCSubsection"],
+Cell[17954, 745, 271, 9, 70, "TOCSubsubsection"],
+Cell[18228, 756, 265, 9, 70, "TOCSubsubsection"],
+Cell[18496, 767, 286, 9, 70, "TOCSubsubsection"],
+Cell[18785, 778, 274, 9, 70, "TOCSubsubsection"],
+Cell[19062, 789, 268, 9, 70, "TOCSubsubsection"]
+}, Open  ]],
+Cell[19345, 801, 281, 9, 70, "TOCSubsection"],
+Cell[CellGroupData[{
+Cell[19651, 814, 283, 9, 70, "TOCSubsection"],
+Cell[19937, 825, 278, 9, 70, "TOCSubsubsection"],
+Cell[20218, 836, 277, 9, 70, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20532, 850, 243, 9, 70, "TOCSubsection"],
+Cell[20778, 861, 287, 9, 70, "TOCSubsubsection"],
+Cell[21068, 872, 304, 9, 70, "TOCSubsubsection"],
+Cell[21375, 883, 313, 10, 70, "TOCSubsubsection"],
+Cell[21691, 895, 291, 9, 70, "TOCSubsubsection"],
+Cell[21985, 906, 313, 10, 70, "TOCSubsubsection"],
+Cell[22301, 918, 315, 10, 70, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22653, 933, 271, 9, 70, "TOCSubsection"],
+Cell[22927, 944, 269, 9, 70, "TOCSubsubsection"],
+Cell[23199, 955, 266, 9, 70, "TOCSubsubsection"],
+Cell[23468, 966, 293, 9, 70, "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23810, 981, 250, 9, 70, "TOCSection"],
+Cell[CellGroupData[{
+Cell[24085, 994, 249, 9, 70, "TOCSubsection"],
+Cell[24337, 1005, 287, 9, 70, "TOCSubsubsection"],
+Cell[24627, 1016, 252, 9, 70, "TOCSubsubsection"]
+}, Open  ]],
+Cell[24894, 1028, 246, 9, 70, "TOCSubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25177, 1042, 238, 9, 70, "TOCSection"],
+Cell[CellGroupData[{
+Cell[25440, 1055, 251, 9, 70, "TOCSubsection"],
+Cell[25694, 1066, 248, 9, 70, "TOCSubsubsection"],
+Cell[25945, 1077, 259, 9, 70, "TOCSubsubsection"],
+Cell[26207, 1088, 250, 9, 70, "TOCSubsubsection"],
+Cell[26460, 1099, 261, 9, 70, "TOCSubsubsection"],
+Cell[26724, 1110, 310, 10, 70, "TOCSubsubsection"],
+Cell[27037, 1122, 306, 9, 70, "TOCSubsubsection"]
+}, Open  ]],
+Cell[27358, 1134, 322, 10, 70, "TOCSubsection"],
+Cell[27683, 1146, 269, 9, 70, "TOCSubsection"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

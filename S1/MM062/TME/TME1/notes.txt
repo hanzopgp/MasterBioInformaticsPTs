@@ -1,0 +1,7 @@
+- Fenetre / Outils / Mise en Forme
+- Enter et retour chariot sont différentes !
+- Utiliser input, title, section, subsection, subsubsection, text.
+- Utiliser Aide/Wolfram documentation pour trouver les tips
+- Fonctions : f[2] au lieu de f(2)
+- Pour les listes : {}
+- Pour chercher qqchose dans les fichiers : Aide : Find Selected Function après avoir sélectionner le caractere inconnu !

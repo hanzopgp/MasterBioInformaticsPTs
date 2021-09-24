@@ -1,0 +1,325 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     11698,        316]
+NotebookOptionsPosition[     10389,        265]
+NotebookOutlinePosition[     10998,        290]
+CellTagsIndexPosition[     10913,        285]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"ShowSteps", "[", "exp_", "]"}], ":=", 
+   RowBox[{"WolframAlpha", "[", 
+    RowBox[{
+     RowBox[{"ToString", "@", 
+      RowBox[{"HoldForm", "@", 
+       RowBox[{"InputForm", "@", "exp"}]}]}], ",", 
+     RowBox[{"TimeConstraint", "\[Rule]", "Infinity"}], ",", 
+     RowBox[{"IncludePods", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Input\>\"", ",", "\"\<Indefinite Integral\>\"", ",", 
+        "\"\<Root\>\"", " ", ",", "\"\<Result\>\""}], "}"}]}], ",", 
+     RowBox[{"PodStates", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Step-by-step solution\>\"", ",", "\"\<Show all steps\>\""}], 
+       "}"}]}]}], "]"}]}], "\[IndentingNewLine]"}], "\n", 
+ RowBox[{"SetAttributes", "[", 
+  RowBox[{"ShowSteps", ",", "HoldAll"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.59974552707666*^9, 3.599745529078664*^9}, {
+  3.5997482134624524`*^9, 3.5997482144824543`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Directory", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.5997460187939796`*^9, 3.5997460234922485`*^9}}],
+
+Cell[BoxData["\<\"I:\\\\Users\\\\Dirk\\\\Documents\"\>"], "Output",
+ CellChangeTimes->{3.599746023990277*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  RowBox[{"NotebookDirectory", "[", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.5997461148434734`*^9, 3.5997461227169237`*^9}}],
+
+Cell[BoxData["\<\"E:\\\\DropboxIMPMC\\\\Dropbox\\\\mathematica\\\\lyx\\\\TP2\\\
+\\notebooks\\\\showsteps\"\>"], "Output",
+ CellChangeTimes->{3.599746123472967*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Directory", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.599746131489425*^9, 3.599746133505541*^9}}],
+
+Cell[BoxData["\<\"E:\\\\DropboxIMPMC\\\\Dropbox\\\\mathematica\\\\lyx\\\\TP2\\\
+\\notebooks\\\\showsteps\"\>"], "Output",
+ CellChangeTimes->{3.5997461339565663`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Save", "[", 
+  RowBox[{"\"\<showsteps.m\>\"", ",", " ", "ShowSteps"}], "]"}]], "Input",
+ CellChangeTimes->{{3.5997454524325533`*^9, 3.5997454742325835`*^9}, {
+  3.599745877990679*^9, 3.5997458803306828`*^9}}],
+
+Cell[BoxData["Quit"], "Input",
+ CellChangeTimes->{{3.5997454805325923`*^9, 3.599745481192593*^9}}],
+
+Cell[BoxData[
+ RowBox[{"<<", "showsteps.m"}]], "Input",
+ CellChangeTimes->{{3.599745482962596*^9, 3.599745487512602*^9}, {
+  3.599745557006728*^9, 3.5997455629067364`*^9}, {3.5997461636632657`*^9, 
+  3.5997461664534254`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "ShowSteps"}]], "Input",
+ CellChangeTimes->{{3.5997454921146097`*^9, 3.599745496144615*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Notebook$$44$745445`ShowSteps", "Print", "PrintUsage",
+ CellChangeTimes->{3.5997461707480583`*^9},
+ CellTags->"Info3599749770-2811088"],
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     RowBox[{
+      RowBox[{"Attributes", "[", "ShowSteps", "]"}], "=", 
+      RowBox[{"{", "HoldAll", "}"}]}]},
+    {" "},
+    {GridBox[{
+       {
+        RowBox[{
+         RowBox[{"ShowSteps", "[", "exp_", "]"}], ":=", 
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{
+           RowBox[{"ToString", "[", 
+            RowBox[{"\<\"HoldForm\"\>", "[", 
+             RowBox[{"\<\"InputForm\"\>", "[", "exp", "]"}], "]"}], "]"}], 
+           ",", 
+           RowBox[{"IncludePods", "\[Rule]", 
+            RowBox[{"{", 
+             
+             RowBox[{"\<\"Input\"\>", ",", "\<\"Indefinite Integral\"\>", 
+              ",", "\<\"Root\"\>"}], "}"}]}], ",", 
+           RowBox[{"PodStates", "\[Rule]", 
+            RowBox[{"{", 
+             
+             RowBox[{"\<\"Step-by-step solution\"\>", 
+              ",", "\<\"Show all steps\"\>"}], "}"}]}]}], "]"}]}]}
+      },
+      BaselinePosition->{Baseline, {1, 1}},
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{"Columns" -> {{
+           Scaled[0.999]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}}]}
+   },
+   BaselinePosition->{Baseline, {1, 1}},
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}}],
+  Definition[$CellContext`ShowSteps],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.599746170763658*^9},
+ CellTags->"Info3599749770-2811088"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{"a", "^", "2"}], "+", 
+    RowBox[{"2", "*", "a", "*", "b"}], "+", 
+    RowBox[{"b", "^", "2"}]}], "]"}], "//", "ShowSteps"}]], "Input",
+ CellChangeTimes->{{3.599745573356751*^9, 3.599745601976791*^9}}],
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryResults",
+  DynamicModuleBox[{Typeset`q$$ = "Simplify[a^2 + 2*a*b + b^2]", 
+   Typeset`opts$$ = {
+   AppearanceElements -> {
+     "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+      "Sources"}, IncludePods -> {"Input", "Indefinite Integral", "Root"}, 
+    PodStates -> {"Step-by-step solution", "Show all steps"}}, 
+   Typeset`elements$$ = {
+   "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+    "Sources"}, Typeset`pod1$$ = XMLElement[
+   "pod", {"title" -> "Input interpretation", "scanner" -> "Identity", "id" -> 
+     "Input", "position" -> "100", "error" -> "false", "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             TagBox[
+              GridBox[{{
+                 PaneBox[
+                  StyleBox[
+                   TagBox[
+                    GridBox[{{
+                    StyleBox[
+                    "\"simplify\"", {
+                    LineIndent -> 0, LineSpacing -> {0.9, 0, 1.5}}], 
+                    StyleBox[
+                    RowBox[{
+                    SuperscriptBox["a", "2"], "+", 
+                    RowBox[{"2", " ", "a", " ", "b"}], "+", 
+                    SuperscriptBox["b", "2"]}], ScriptLevel -> 0, 
+                    StripOnInput -> False]}}, GridBoxBackground -> {"Columns" -> {
+                    GrayLevel[0.949], None}, "Rows" -> {{None}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    ColumnsEqual -> False, RowsEqual -> False, 
+                    GridBoxDividers -> {"Columns" -> {
+                    GrayLevel[0.84], 
+                    GrayLevel[0.84], 
+                    GrayLevel[0.84]}, "Rows" -> {{
+                    GrayLevel[0.84]}}, 
+                    "RowsIndexed" -> {
+                    1 -> GrayLevel[0.84], -1 -> GrayLevel[0.84]}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {2, 2, 2}, "Rows" -> {{1}}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, 
+                    AllowScriptLevelChange -> False, BaselinePosition -> 1], 
+                    $CellContext`TagBoxWrapper["Separator" -> " | "]], 
+                   LineSpacing -> {1, 0, 1.5}, LineIndent -> 0], 
+                  BaselinePosition -> Center]}}, 
+               GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               ColumnsEqual -> False, RowsEqual -> False, 
+               GridBoxSpacings -> {"Columns" -> {{
+                    AbsoluteThickness[-1]}}, "Rows" -> {{0}}}, 
+               AllowScriptLevelChange -> False], 
+              $CellContext`TagBoxWrapper["Separator" -> " | "]], 
+             PolynomialForm[#, TraditionalOrder -> False]& ], 
+            TraditionalForm]], "Output"]}], 
+       XMLElement["dataformats", {}, {"plaintext"}]}]}], Typeset`aux1$$ = {
+   True, False, {False}, True}, Typeset`asyncpods$$ = {}, 
+   Typeset`nonpods$$ = {}, Typeset`initdone$$ = True, Typeset`queryinfo$$ = {
+   "success" -> "true", "error" -> "false", "numpods" -> "1", "datatypes" -> 
+    "Simplify", "timedout" -> "", "timedoutpods" -> "", "timing" -> "0.841", 
+    "parsetiming" -> "0.47", "parsetimedout" -> "false", "recalculate" -> "", 
+    "id" -> "MSPa471021ec01dchggh4bd600004f7180i0b268fi4a", "host" -> 
+    "http://www4c.wolframalpha.com", "server" -> "13", "related" -> 
+    "http://www4c.wolframalpha.com/api/v2/relatedQueries.jsp?id=\
+MSPa471121ec01dchggh4bd600001ech02d7a2ae4heb&s=13", "version" -> "2.6"}, 
+   Typeset`sessioninfo$$ = {
+   "TimeZone" -> 1., 
+    "Date" -> {2014, 1, 26, 18, 20, 20.7776219`9.070170773556725}, "Line" -> 
+    6, "SessionID" -> 23591316043029592110}, Typeset`showpods$$ = {1}, 
+   Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, Typeset`open$$ = False, 
+   Typeset`newq$$ = "Simplify[a^2 + 2*a*b + b^2]"}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`FormatAlphaResults[
+      Dynamic[{
+       1, {Typeset`pod1$$}, {Typeset`aux1$$}, Typeset`chosen$$, 
+        Typeset`open$$, Typeset`elements$$, Typeset`q$$, Typeset`opts$$, 
+        Typeset`nonpods$$, Typeset`queryinfo$$, Typeset`sessioninfo$$, 
+        Typeset`showpods$$, Typeset`failedpods$$, Typeset`newq$$}]], 
+     StandardForm],
+    ImageSizeCache->{603., {51., 57.}},
+    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+   DynamicModuleValues:>{},
+   Initialization:>If[
+     Not[Typeset`initdone$$], Null; WolframAlphaClient`Private`doAsyncUpdates[
+       Hold[{Typeset`pod1$$}], Typeset`asyncpods$$, 
+       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
+     Typeset`initdone$$ = True],
+   SynchronousInitialization->False],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{{3.599745596106783*^9, 3.599745620777622*^9}}]
+}, Open  ]]
+},
+WindowSize->{716, 547},
+WindowMargins->{{81, Automatic}, {18, Automatic}},
+ShowSelection->True,
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 5, \
+2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3599749770-2811088"->{
+  Cell[3208, 101, 141, 2, 39, "Print",
+   CellTags->"Info3599749770-2811088"],
+  Cell[3352, 105, 1574, 43, 83, "Print",
+   CellTags->"Info3599749770-2811088"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3599749770-2811088", 10729, 277}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 936, 23, 103, "Input"],
+Cell[CellGroupData[{
+Cell[1518, 47, 127, 2, 27, "Input"],
+Cell[1648, 51, 109, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1794, 57, 174, 3, 27, "Input"],
+Cell[1971, 62, 163, 2, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2171, 69, 123, 2, 27, "Input"],
+Cell[2297, 73, 165, 2, 27, "Output"]
+}, Open  ]],
+Cell[2477, 78, 232, 4, 27, "Input"],
+Cell[2712, 84, 98, 1, 27, "Input"],
+Cell[2813, 87, 225, 4, 27, "Input"],
+Cell[CellGroupData[{
+Cell[3063, 95, 120, 2, 27, "Input"],
+Cell[CellGroupData[{
+Cell[3208, 101, 141, 2, 39, "Print",
+ CellTags->"Info3599749770-2811088"],
+Cell[3352, 105, 1574, 43, 83, "Print",
+ CellTags->"Info3599749770-2811088"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4975, 154, 278, 7, 27, "Input"],
+Cell[5256, 163, 5117, 99, 125, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
