@@ -1,2 +1,6 @@
 # MasterBioInformaticsPTs
-Pratical works of my master's degree in Bio-Informatics &amp; Mathematical Modelling.
+
+## Presentation
+
+Folders containing main practical works.
+Master's degree link : http://www.lcqb.upmc.fr/BIM/
