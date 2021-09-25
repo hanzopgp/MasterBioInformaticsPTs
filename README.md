@@ -17,7 +17,7 @@ MasterBioInformaticsPTs/
 │     ├── SBAS/      (Statistiques en bioinformatique et algorithmes sur les séquences)
 │     ├── MMCN/      (Modèles mathématiques et computationnels en neurosciences)   
 │     ├── MV418/     (Les acides nucléiques : de la molécule unique à la cellule)
-│     └── ML   /     (Machine learning)
+│     └── ML/        (Machine learning)
 ├── README.md		          
 └── LICENCE  
 </pre></code>
