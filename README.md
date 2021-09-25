@@ -14,6 +14,7 @@ MasterBioInformaticsPTs/
 │     ├── MM062/     (Systèmes dynamiques discrets et continus en biologie et médecine)
 |     └── MOGPL      (Modélisation et optimisation avec graph et programmation linéaire)
 ├── S2/
+│     ├── PROJET/    (Projet de recherche en partenariat avec un laboratoire)  
 │     ├── SBAS/      (Statistiques en bioinformatique et algorithmes sur les séquences)
 │     ├── MMCN/      (Modèles mathématiques et computationnels en neurosciences)   
 │     ├── MV418/     (Les acides nucléiques : de la molécule unique à la cellule)
