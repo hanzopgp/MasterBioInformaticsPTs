@@ -1,0 +1,1464 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     37205,       1456]
+NotebookOptionsPosition[     30729,       1266]
+NotebookOutlinePosition[     31711,       1302]
+CellTagsIndexPosition[     31668,       1299]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["M3 / Contents", "ContentsTitle"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\nPr\[EAcute]ambule",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:1"}]], 
+  "TOCPage"]
+}], "TOCTitle"],
+
+Cell[TextData[{
+ "I. Objectif g\[EAcute]n\[EAcute]ral et Pr\[EAcute]sentation",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:2"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "II. Calcul matriciel ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:3"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. D\[EAcute]finitions des matrices *",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:4"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. D\[EAcute]finition math\[EAcute]matique d\[CloseCurlyQuote]une matrice",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:5"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. D\[EAcute]finition Mathematica d\[CloseCurlyQuote]une matrice",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["1",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:6"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "3. Op\[EAcute]rations matricielles",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["2",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:7"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\[Rule] B. Op\[EAcute]rations de base sur des matrices *",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["2",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:8"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "\[Rule] 1) Saisir les matrices suivantes :",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["2",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:9"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 2) Calculez la somme matricielle : ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"matM", "+", 
+    RowBox[{"2", "matN"}]}], TraditionalForm]]],
+ " ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["2",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:10"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 3) Calculer le produit matriciel : matM.matN",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["3",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:11"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 4) Calculer avec ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " : ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["matM", "2"], TraditionalForm]]],
+ " et matM.matM ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["3",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:12"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 5) Conclusions",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["3",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:13"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "III. Programmation graphique ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["3",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:14"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["\[Rule] ",
+  FontWeight->"Bold"],
+ "A. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+    "Op\[EAcute]rations", " ", "graphiques", " ", "et", " ", "rotations"}], 
+    "..."}], TraditionalForm]]],
+ " *",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["3",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:15"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "\[Rule] 1) Tracer le cercle unit\[EAcute] (Circle[]) en rouge",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["3",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:16"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 2) Tracer le vecteur unit\[EAcute] sur l\[CloseCurlyQuote]axe des \
+",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]]],
+ " (r\[EAcute]els), et superposer",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["4",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:17"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 3) Ajouter l\[CloseCurlyQuote]affichage du produit ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {
+        RowBox[{"Cos", "[", "\[Theta]", "]"}], 
+        RowBox[{"-", 
+         RowBox[{"Sin", "[", "\[Theta]", "]"}]}]},
+       {
+        RowBox[{"Sin", "[", "\[Theta]", "]"}], 
+        RowBox[{"Cos", "[", "\[Theta]", "]"}]}
+      }], "\[NoBreak]", ")"}], ".", 
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {"1"},
+       {"0"}
+      }], "\[NoBreak]", ")"}]}], TraditionalForm]]],
+ " en bleu",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["4",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:18"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 4) En faire un Manipulate[], cadrer, jouer avec, et conclure.",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["5",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:19"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 5) Recommandation",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["5",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:20"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "IV. Champ de Vecteurs",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["5",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:21"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. Introduction",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["5",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:22"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Champ de vecteurs",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["5",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:23"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. \[CapitalEAcute]l\[EAcute]ments de lecture d\[CloseCurlyQuote]un champ \
+de vecteurs",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["6",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:24"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "B. VectorPlot de l\[CloseCurlyQuote]identit\[EAcute]",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["6",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:25"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "\[Rule] 1. Trac\[EAcute] brut du champ de vecteurs de \
+l\[CloseCurlyQuote]identit\[EAcute]",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["6",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:26"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 2. Trac\[EAcute] normalis\[EAcute] du champ de vecteurs de l\
+\[CloseCurlyQuote]identit\[EAcute]",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["6",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:27"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 3. Idem + 1 ligne de flot",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["7",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:28"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\[Rule] C. VectorPlot de Sym\[EAcute]trie Orthogonale[\[Lambda], \[Theta]] \
+dans un Manipulate",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["7",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:29"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "\[Rule] 1. VectorPlot d\[CloseCurlyQuote]une application lin\[EAcute]aire \
+simple dans un Manipulate",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["7",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:30"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 2. Texte et VectorPlot dans deux colonnes adjacentes",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["8",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:31"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\[Rule] V. Expressions des Solutions d\[CloseCurlyQuote]EDO avec \
+Mathematica",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["10",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:32"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\[Rule] A. R\[EAcute]solution Formelle",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["10",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:33"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "\[Rule] 1. \[CapitalEAcute]chec de r\[EAcute]solution formelle d\
+\[CloseCurlyQuote]EDO non lin\[EAcute]aires",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["10",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:34"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 2. R\[EAcute]solution formelle d'EDO lin\[EAcute]aires",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["11",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:35"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "B. R\[EAcute]solution num\[EAcute]rique",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["11",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:36"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Programmation Proc\[EAcute]durale (D\[EAcute]clarative ou \
+Imp\[EAcute]rative) : ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["11",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:37"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2/ Programmation par R\[EGrave]gles :",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["12",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:38"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "3/ Programmation Fonctionnelle (\[CapitalAGrave] VALIDER)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["12",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:39"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "4/ La variable globale \"solu\"",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["13",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:40"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "VI. R\[EAcute]solution pratique d\[CloseCurlyQuote]EDO num\[EAcute]riques",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["13",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:41"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. R\[EAcute]solution du syst\[EGrave]me d'EDO pour ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox[
+     SubscriptBox["e", "0"], 
+     RowBox[{
+      SubscriptBox["K", "m"], "+", 
+      SubscriptBox["s", "0"]}]], 
+    RowBox[{"<<", "1"}]}], TraditionalForm]]],
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["13",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:42"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1/ Evaluate : Trac\[EAcute]s de la solution (temps court)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["13",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:43"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2/ Trac\[EAcute]s de la solution (temps long 2 secondes = 2000 ms)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["14",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:44"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "3/ Superposition de graphiques avec Show",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["15",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:45"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "B. R\[EAcute]solution du syst\[EGrave]me d'EDO pour ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox[
+     SubscriptBox["e", "0"], 
+     RowBox[{
+      SubscriptBox["K", "m"], "+", 
+      SubscriptBox["s", "0"]}]], "\[TildeTilde]", "1"}], TraditionalForm]]],
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["16",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:46"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1/ Jolis trac\[EAcute]s de la solution",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["16",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:47"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2/ Diagrammes de phase en 2D ou 3D",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["16",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:48"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "3/ Manipulate interactif des solutions (cas g\[EAcute]n\[EAcute]ral)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["17",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:49"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\nExercices EDO",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["18",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:50"}]], 
+  "TOCPage"]
+}], "TOCTitle"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\[Rule] I. Elaboration d\[CloseCurlyQuote]un Manipulate pour EDO",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["19",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:51"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\[Rule] A. VectorPlot de 9 applications lin\[EAcute]aires fonctions de \
+\[Lambda] et/ou \[Theta]",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["19",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:52"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "\[Rule] 1. Manipulate pour afficher une matrice parmi 9",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["19",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:53"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 2. Manipulate pour tracer le champ de vecteurs \
+d\[CloseCurlyQuote]une matrice parmi 9",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["20",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:54"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 3. Idem avec Texte et VectorPlot dans deux colonnes adjacentes",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["21",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:55"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 4. Idem + matrice g\[EAcute]n\[EAcute]rale + Axes de \
+sym\[EAcute]trie et vecteurs propres ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["22",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:56"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\[Rule] B. VectorPlot de 10 applications lin\[EAcute]aires + solutions \
+EDO",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["23",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:57"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "\[Rule] 1. Idem + calcul et affichage des solutions EDO",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["23",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:58"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\[Rule] C. VectorPlot de 10 (applications + EDO) lin\[EAcute]aires + cas \
+non lin\[EAcute]aire",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["23",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:59"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Red\[EAcute]finition des matrices sans homoth\[EAcute]tie (\
+\[CapitalAGrave] VALIDER)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["23",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:60"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "\[Rule] 2. Ajout d\[CloseCurlyQuote]un cas EDO non lin\[EAcute]aire (Rom\
+\[EAcute]o et Juliette)",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["24",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:61"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\nAnnexes",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["26",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:62"}]], 
+  "TOCPage"]
+}], "TOCTitle"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "I. Caract\[EAcute]risation d\[CloseCurlyQuote]applications \
+lin\[EAcute]aires",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["26",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:63"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. \[CapitalEAcute]tude syst\[EAcute]matique",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["26",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:64"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Pr\[EAcute]sentation",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["26",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:65"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "B. Les applications lin\[EAcute]aires courantes",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["26",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:66"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Homoth\[EAcute]tie de rapport ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Lambda]", ">", "0"}], TraditionalForm]]],
+ " et Identit\[EAcute]",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["26",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:67"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2. Sym\[EAcute]trie centrale ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["26",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:68"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "3. Sym\[EAcute]trie par rapport \[AGrave] l\[CloseCurlyQuote]axe x",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["27",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:69"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "4. Sym\[EAcute]trie par rapport \[AGrave] la premi\[EGrave]re bissectrice",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["28",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:70"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "5. Rotation d\[CloseCurlyQuote]angle ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Theta]", "=", 
+    RowBox[{"45", "\[Degree]"}]}], TraditionalForm]]],
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["28",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:71"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "6. Projection sur ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["v", "\[RightVector]"], TraditionalForm]]],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{" ", "\[Alpha]"}]},
+       {"\[Beta]"}
+      }], ")"}], "=", 
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{" ", "2"}]},
+       {"1"}
+      }], ")"}]}], TraditionalForm]]],
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["29",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:72"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "7. Sym\[EAcute]trie orthogonale par rapport \[AGrave] ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["v", "\[RightVector]"], TraditionalForm]]],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{" ", "\[Alpha]"}]},
+       {"\[Beta]"}
+      }], ")"}], "=", 
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{" ", "2"}]},
+       {"1"}
+      }], ")"}]}], TraditionalForm]]],
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["30",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:73"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "8. Cisaillement le long de x",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["31",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:74"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "II. Bibliographie",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["32",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:75"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. R\[EAcute]f\[EAcute]rences disponibles sur MOODLE 4M062",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["32",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:76"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1. Livres et Articles ",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["32",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:77"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "B. Originaux des 2 Wolfram Demonstrations utilis\[EAcute]es",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:78"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "PhasePortraitAndFieldDirectionsOfTwoDimensionalLinearSystems",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:79"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "HomogeneousLinearSystemOfCoupledDifferentialEquations",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:80"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "III. Wolfram Demonstrations",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:81"}]], 
+  "TOCPage"]
+}], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. Les Classiques Indispensables",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:82"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1BifurcationsCanoniquesLocales",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:83"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2ProiesPredateurs",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:84"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "3ODE_Lineaires",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:85"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "4IntegrationNumerique",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:86"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "5Attracteurs",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:87"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "5Lyapunov",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:88"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "5SensibiliteAuxConditionsInitiales",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:89"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "B. Suppl\[EAcute]ments",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:90"}]], 
+  "TOCPage"]
+}], "TOCSubsection"],
+
+Cell[TextData[{
+ "1Bifurcations",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["33",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:91"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "2ProiesPredateurs",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["34",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:92"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "3ODE_NonLineaires",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["34",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:93"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"],
+
+Cell[TextData[{
+ "4IntegrationNumerique",
+ " ",
+ StyleBox["\t", "Leader"],
+ Cell[TextData[ButtonBox["34",
+  BaseStyle->"PageLink",
+  ButtonData->{
+    FrontEnd`FileName[{}, "M3_4M062ApplicationsEDOTxt.nb"], "c:94"}]], 
+  "TOCPage"]
+}], "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 752},
+WindowMargins->{{316, Automatic}, {Automatic, 50}},
+PrintingStartingPageNumber->1,
+PageHeaders->{{
+   Cell[
+    TextData[
+     StyleBox[
+      CounterBox["Page"], "PageNumber"]], "Header", 
+    CellMargins -> {{0, Inherited}, {Inherited, Inherited}}], None, None}, {
+  None, None, 
+   Cell[
+    TextData[
+     StyleBox[
+      CounterBox["Page"], "PageNumber"]], "Header", 
+    CellMargins -> {{Inherited, 0}, {Inherited, Inherited}}]}},
+PageFooters->{{None, None, None}, {None, None, None}},
+PageHeaderLines->{True, False},
+PageFooterLines->{True, False},
+PrintingOptions->{"FacingPages"->True,
+"FirstPageFace"->Right,
+"FirstPageFooter"->True,
+"FirstPageHeader"->True},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"HelpBrowser.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 38, 0, 61, "ContentsTitle"],
+Cell[CellGroupData[{
+Cell[621, 24, 243, 9, 36, "TOCTitle"],
+Cell[867, 35, 285, 9, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[1177, 48, 247, 9, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[1449, 61, 266, 9, 14, "TOCSubsection"],
+Cell[1718, 72, 305, 9, 14, "TOCSubsubsection"],
+Cell[2026, 83, 296, 9, 14, "TOCSubsubsection"],
+Cell[2325, 94, 266, 9, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2628, 108, 285, 9, 14, "TOCSubsection"],
+Cell[2916, 119, 274, 9, 14, "TOCSubsubsection"],
+Cell[3193, 130, 382, 14, 14, "TOCSubsubsection"],
+Cell[3578, 146, 285, 9, 14, "TOCSubsubsection"],
+Cell[3866, 157, 412, 16, 17, "TOCSubsubsection"],
+Cell[4281, 175, 255, 9, 14, "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4585, 190, 256, 9, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[4866, 203, 446, 18, 14, "TOCSubsection"],
+Cell[5315, 223, 294, 9, 14, "TOCSubsubsection"],
+Cell[5612, 234, 395, 13, 14, "TOCSubsubsection"],
+Cell[6010, 249, 776, 26, 34, "TOCSubsubsection"],
+Cell[6789, 277, 302, 9, 14, "TOCSubsubsection"],
+Cell[7094, 288, 258, 9, 14, "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7401, 303, 248, 9, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[7674, 316, 245, 9, 14, "TOCSubsection"],
+Cell[7922, 327, 253, 9, 14, "TOCSubsubsection"],
+Cell[8178, 338, 320, 10, 16, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8535, 353, 282, 9, 14, "TOCSubsection"],
+Cell[8820, 364, 324, 10, 14, "TOCSubsubsection"],
+Cell[9147, 376, 337, 10, 14, "TOCSubsubsection"],
+Cell[9487, 388, 266, 9, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9790, 402, 325, 10, 14, "TOCSubsection"],
+Cell[10118, 414, 334, 10, 14, "TOCSubsubsection"],
+Cell[10455, 426, 293, 9, 14, "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10797, 441, 306, 10, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[11128, 455, 269, 9, 14, "TOCSubsection"],
+Cell[11400, 466, 343, 10, 16, "TOCSubsubsection"],
+Cell[11746, 478, 296, 9, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12079, 492, 270, 9, 14, "TOCSubsection"],
+Cell[12352, 503, 319, 10, 14, "TOCSubsubsection"],
+Cell[12674, 515, 271, 9, 14, "TOCSubsubsection"],
+Cell[12948, 526, 291, 9, 16, "TOCSubsubsection"],
+Cell[13242, 537, 265, 9, 14, "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13556, 552, 301, 9, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[13882, 565, 499, 18, 25, "TOCSubsection"],
+Cell[14384, 585, 291, 9, 14, "TOCSubsubsection"],
+Cell[14678, 596, 300, 9, 14, "TOCSubsubsection"],
+Cell[14981, 607, 274, 9, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15292, 621, 495, 17, 25, "TOCSubsection"],
+Cell[15790, 640, 272, 9, 14, "TOCSubsubsection"],
+Cell[16065, 651, 268, 9, 14, "TOCSubsubsection"],
+Cell[16336, 662, 302, 9, 14, "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16699, 678, 241, 9, 36, "TOCTitle"],
+Cell[CellGroupData[{
+Cell[16965, 691, 292, 9, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[17282, 704, 328, 10, 14, "TOCSubsection"],
+Cell[17613, 716, 289, 9, 14, "TOCSubsubsection"],
+Cell[17905, 727, 329, 10, 26, "TOCSubsubsection"],
+Cell[18237, 739, 304, 9, 14, "TOCSubsubsection"],
+Cell[18544, 750, 334, 10, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18915, 765, 307, 10, 14, "TOCSubsection"],
+Cell[19225, 777, 289, 9, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19551, 791, 326, 10, 14, "TOCSubsection"],
+Cell[19880, 803, 323, 10, 16, "TOCSubsubsection"],
+Cell[20206, 815, 331, 10, 14, "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20598, 832, 235, 9, 36, "TOCTitle"],
+Cell[CellGroupData[{
+Cell[20858, 845, 306, 10, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[21189, 859, 275, 9, 16, "TOCSubsection"],
+Cell[21467, 870, 257, 9, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21761, 884, 278, 9, 14, "TOCSubsection"],
+Cell[22042, 895, 374, 13, 14, "TOCSubsubsection"],
+Cell[22419, 910, 263, 9, 14, "TOCSubsubsection"],
+Cell[22685, 921, 300, 9, 14, "TOCSubsubsection"],
+Cell[22988, 932, 307, 9, 14, "TOCSubsubsection"],
+Cell[23298, 943, 381, 13, 14, "TOCSubsubsection"],
+Cell[23682, 958, 614, 26, 32, "TOCSubsubsection"],
+Cell[24299, 986, 650, 26, 32, "TOCSubsubsection"],
+Cell[24952, 1014, 262, 9, 14, "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25263, 1029, 245, 9, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[25533, 1042, 289, 9, 14, "TOCSubsection"],
+Cell[25825, 1053, 256, 9, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26118, 1067, 290, 9, 14, "TOCSubsection"],
+Cell[26411, 1078, 294, 9, 14, "TOCSubsubsection"],
+Cell[26708, 1089, 287, 9, 14, "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27044, 1104, 255, 9, 15, "TOCSection"],
+Cell[CellGroupData[{
+Cell[27324, 1117, 263, 9, 14, "TOCSubsection"],
+Cell[27590, 1128, 264, 9, 14, "TOCSubsubsection"],
+Cell[27857, 1139, 251, 9, 14, "TOCSubsubsection"],
+Cell[28111, 1150, 248, 9, 14, "TOCSubsubsection"],
+Cell[28362, 1161, 255, 9, 14, "TOCSubsubsection"],
+Cell[28620, 1172, 246, 9, 14, "TOCSubsubsection"],
+Cell[28869, 1183, 243, 9, 14, "TOCSubsubsection"],
+Cell[29115, 1194, 268, 9, 14, "TOCSubsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29420, 1208, 253, 9, 14, "TOCSubsection"],
+Cell[29676, 1219, 247, 9, 14, "TOCSubsubsection"],
+Cell[29926, 1230, 251, 9, 14, "TOCSubsubsection"],
+Cell[30180, 1241, 251, 9, 14, "TOCSubsubsection"],
+Cell[30434, 1252, 255, 9, 14, "TOCSubsubsection"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
