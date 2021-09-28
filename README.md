@@ -12,7 +12,7 @@ MasterBioInformaticsPTs/
 │     ├── LRC/ 	     (Logique et représentation des connaissances)   
 │     ├── MAPSI/     (Modèles et algorithmes de probabilités et statistiques pour l'informatique)
 │     ├── MM062/     (Systèmes dynamiques discrets et continus en biologie et médecine)
-|     └── MOGPL      (Modélisation et optimisation avec graph et programmation linéaire)
+|     └── BIMA/      (Bases du traitement des images)
 ├── S2/
 │     ├── PROJET/    (Projet de recherche en partenariat avec un laboratoire)  
 │     ├── SBAS/      (Statistiques en bioinformatique et algorithmes sur les séquences)
