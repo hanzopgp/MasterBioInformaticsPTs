@@ -1,0 +1,78 @@
+B. Prise en main
+
+1*
+F1)and A not imp B A                             
+-> Insatisfiable car aucune feuille ouverte
+
+F2)imp and or A C or B C imp not B or and A B C  
+-> Satisfiable car au moins une feuille ouverte
+not F2) not imp and or A C or B C imp not B or and A B C 
+-> Insatisfiable donc F2) valide
+
+F3)not imp imp A B imp not B not A
+-> Insatisfiable car aucune feuille ouverte
+
+F4)or and imp A B imp B C and imp C B imp B A
+-> Satisfiable car au moins une feuille ouverte
+
+F5)imp imp A B equiv imp B C imp A C
+-> Satisfiable car au moins une feuille ouverte
+
+F6)imp and imp A B imp B C imp A C
+-> Satifsiable car au moins une feuille ouverte
+not F6) not imp and imp A B imp B C imp A C 
+-> Insatisfiable donc F6) valide
+
+=======================================================================================================
+
+C. Diagnostic médical
+
+1. 
+(a)sup38 -> fievre
+(b)grippe -> tamiflu
+(c)fievre & toux -> grippe
+(d)toux & sup38
+
+-------------------------------------------------------------------------------------------------------
+
+2.
+sup38 : S
+fievre : F
+grippe : G
+tamiflu : T
+toux : X
+and and and imp G T imp and F X G imp S F and X S
+-> Satisfiable (Une seule feuille, il y a peut être une erreur)
+
+-------------------------------------------------------------------------------------------------------
+
+3*
+bronchite : B
+and and and imp G T imp and F X or B G imp S F and X S
+-> Satisfiable (Devrait être insatisfiable, il y a une erreur)
+
+=======================================================================================================
+
+D. Modèles et pré-modèles
+
+2.
+
+-------------------------------------------------------------------------------------------------------
+
+3*
+
+-------------------------------------------------------------------------------------------------------
+
+4*
+
+=======================================================================================================
+
+Résumé de la séance : 
+- Utilisation d'un logiciel de résolution de formule logique
+- Utilisation de la logique propositionnelle classique
+- Utilisation de la méthode des tableaux
+- Interprétation des résultats de méthode des tableaux : validité, satisfiabilité, insatisfiabilité
+- Modélisation d'un cas concret
+- Utilisation de LoTREC pour résoudre rapidemment le model
+- Raisonnement sur les modèles/pré-modèles
+- Raisonnement à propos du rapport entre le nombre de modèles et de pré-modèles d'une formule
