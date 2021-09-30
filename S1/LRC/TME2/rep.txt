@@ -1,4 +1,6 @@
-B. Prise en main
+Durand Enzo / Kordon Djeser
+
+. Prise en main
 
 1*
 F1)and A not imp B A                             
@@ -19,7 +21,7 @@ F5)imp imp A B equiv imp B C imp A C
 -> Satisfiable car au moins une feuille ouverte
 
 F6)imp and imp A B imp B C imp A C
--> Satifsiable car au moins une feuille ouverte
+-> Satisfiable car au moins une feuille ouverte
 not F6) not imp and imp A B imp B C imp A C 
 -> Insatisfiable donc F6) valide
 
@@ -43,27 +45,68 @@ tamiflu : T
 toux : X
 and and and imp G T imp and F X G imp S F and X S
 -> Satisfiable (Une seule feuille, il y a peut être une erreur)
+and and and imp G T imp and F X G imp S F and and X S not T
+-> En prenant la négation du but T on obtient une formule insatisfiable. 
+
+-> Interpretation : Il faut prendre du tamiflu.
 
 -------------------------------------------------------------------------------------------------------
 
 3*
 bronchite : B
 and and and imp G T imp and F X or B G imp S F and X S
--> Satisfiable (Devrait être insatisfiable, il y a une erreur)
+-> Satisfiable
+and and and imp G T imp and F X or B G imp S F and and X S not T
+-> Satisfiable
+
+-> Interpretation : La formule est satisfiable, il ne faut donc pas forcément prendre du tamiflu.
 
 =======================================================================================================
 
 D. Modèles et pré-modèles
 
 2.
+or and and imp A B B C and imp C B imp B A 
+-> Satisfiable
+
+Hypercube : 
+
+     (1)                 (1)
+     110 --------------- 111
+     /|                    /|
+    / |                   / |
+   /  |                  /  |
+  /   |                 /   |
+ /    |             (1)/    |
+010 --------------- 011     |
+|     |              |      |	
+|	 100-------------|---- 101
+|	 /(1)		     |	  /
+|	/				 |	 /
+|  /				 |  /
+| /					 | /
+|/					 |/
+000 --------------- 001
+(1)
+
+--> Interpretation : Satisfiable.
+Si une face avait les 4 sommets à 1, par exemple 010 : (1) --> alors on pourrait discuter de la face B : (1)
 
 -------------------------------------------------------------------------------------------------------
 
-3*
+3* P1, P2, P3 tq M(P1) inclu dans M(P2) inclu dans M(P3) avec P1, P2, P3 pré-modèles :
+or or A and A B and and A B C 
+-> P1 : (A or A and B), (A)
+-> P2 : (A or A and B), (A et B), (A), (B)
+-> P3 : (A or A and B), (A et B), (A), (B), (C)
 
 -------------------------------------------------------------------------------------------------------
 
-4*
+4* Première observation : une forme normale disjonctive où chaque membre entre les disjonctions est inclus 
+dans les parenthèses -> nombre de pré-modèles = nombre de membre dans la forme normale disjonctive.
+exemple : 
+- (A) ou (A et B) ou (A et B et C)
+- (A) ou (A et B) ou (A et B et C) ou (A et B et C et D)
 
 =======================================================================================================
 
@@ -74,5 +117,6 @@ Résumé de la séance :
 - Interprétation des résultats de méthode des tableaux : validité, satisfiabilité, insatisfiabilité
 - Modélisation d'un cas concret
 - Utilisation de LoTREC pour résoudre rapidemment le model
+- Utilisation de l'hypercube pour interpretation de modèle
 - Raisonnement sur les modèles/pré-modèles
 - Raisonnement à propos du rapport entre le nombre de modèles et de pré-modèles d'une formule
