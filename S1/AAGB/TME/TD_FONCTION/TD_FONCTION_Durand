@@ -5,16 +5,28 @@ TD Fonction Durand Enzo
 a. Découverte des données sur les voies métaboliques.
 
 Chaque sphère est un composé chimique et chaque ligne est une transformation qui peut être effectuer au niveau cellulaire pour former de nouveaux composés chimiques. Les gènes codent les enzymes permettant de catalyser les réactions. A chaque trait est lié une enzyme donc un gène.
+Dans les réseaux de régulation transcriptionnels, les sphères représentent les facteurs de transcriptions. Les traits représentent les motifs (séquence courte dans le promoteur) de reconnaissances.
 
-b. Exploration d'un sous réseau métabolique
+---------------------------------------------------------------------------------------------------
 
+b. Exploration d'un sous réseau métabolique : Biosynthesis of amino acids
 
+On voit en utilisant "change pathways" qu'une petite partie seulement du réseaux est utilisé par l'humain. Par exemple l'histidine et la lysine n'est pas synthétisé naturellement par les humains. Des organismes vont donc devoir trouver un autre moyen (i.e nourriture) de se procurer les acides aminés pour synthétiser leurs protéines.
+Si on regarde le cas de la levure de boulanger, on voit qu'elle peut synthétiser les 20 acides aminés requis.
+
+===================================================================================================
 
 2. Etude de gène impliqués dans la biosynthèse des acides aminés.
 
 a. Travaux pratiques : Etude du gène TRP1 impliqué dans la voie de biosynthèse du tryptophane chez la levure S. cerevisiae
 
+SGD TRP1 : https://www.yeastgenome.org/locus/S000002414/sequence
+S. cerevisiae possède le gène TRP1 mais ce gène a subit une mutation qui le rend non fonctionnel. Dans le TP nous allons essayer de le rendre fonctionnel en introduisant un ADN supplémentaire (plasmide). On va donc utiliser plusieurs versions de TRP1 pour étudier l'impact de ce gène sur le phénotype. On aura donc la version de base TRP1 muté mais aussi 3 autres versions de TRP1 mutés.
+
+---------------------------------------------------------------------------------------------------
+
+b. Etude d’un gène humain impliqué dans la voie de biosynthèse du glutamate : le gène de la N-acetylglutamate synthase (NAGS)
 
 
-b. Etude d’un gène humain impliqué dans la voie de biosynthèse du glutamate :
-le gène de la N-acetylglutamate synthase (NAGS)
+
+===================================================================================================
