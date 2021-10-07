@@ -7,12 +7,14 @@ Exercice 1 :
 1)
 
 2) 
-r(f(f(a)),b). ---> true.
-- Avec la trace on voit que le compilateur pose X=f(a) dans r et X=a dans p et conclu true.
+?- r(f(f(a)),b). 
+---> true.
+Avec la trace on voit que le compilateur pose X=f(a) dans r et X=a dans p et conclu true.
 
 
-p(f(a),b) ---> true
-- Avec la trace on voit qu'il pose X=a dans p et conclu true.
+?- p(f(a),b) 
+---> true
+Avec la trace on voit qu'il pose X=a dans p et conclu true.
 
 ========================================================================================
 
@@ -23,12 +25,14 @@ Exercice 2 :
 ----------------------------------------------------------------------------------------
 
 2)
-q(X,b) ---> X=b;X=a;false.
+?- q(X,b) 
+---> X=b;X=a;false.
 - Avec la trace on peut voir que le compilateur test q avec X=_4084 et Z=b, il trouve donc que X=b.
 - Ensuite il test q avec X=_4074 et Z=b encore une fois, puis r avec a=_4074 et b=_4292. Il essaie donc r(a,b), q(b,b), q(b,b) et q(a,b) et trouve X=a.
 - Il tente ensuie q avec X=b et r avec a=b et b=_4292. Il fail et arrive a q avec X=_4074 et Z=b mais fail encore et conclu false.
 
-q(b,X) ---> X=b;false.
+?- q(b,X) 
+---> X=b;false.
 - Avec la trace on peut voir que le compilateur test q avec X=b et Z=_4076, il conclu que X=b.
 - Il test q avec X=b, Z=_4076 puis r avec a=b et b=_4292, il conclu false.
 
@@ -53,29 +57,279 @@ Pascal et Zoe sont des etudiants consciencieux.
 
 2) 
 Qui va reussir ?
----> reussir(X)
+?- reussir(X)
 
 ----------------------------------------------------------------------------------------
 
 3)
+?- reussir(X)
+X=zoe;
+X=pascal.
 
 ========================================================================================
 
 Exercice 4 :
 
 1)
+pere(stephane,enzo).
+pere(stephane,stessie).
+pere(stephane,kelly).
+pere(bernard,stephane).
+mere(marie,enzo).
+mere(marie,stessie).
+mere(marie,kelly).
+
+----------------------------------------------------------------------------------------
+
 2)
+parent(X,Y) :- pere(X, Y).
+parent(X,Y) :- mere(X, Y).
+
+----------------------------------------------------------------------------------------
+
 3)
+?- parent(stephane, X).
+--->
+X=enzo;
+X=stessie;
+X=kelly;
+false.
+
+?- parent(enzo, X).
+--->false.
+
+?- parent(A, B).
+--->
+A = stephane,
+B = enzo ;
+A = stephane,
+B = stessie ;
+A = stephane,
+B = kelly ;
+A = bernard,
+B = stephane ;
+A = marie,
+B = enzo ;
+A = marie,
+B = stessie ;
+A = marie,
+B = kelly.
+
+----------------------------------------------------------------------------------------
+
 4)
+parents(X,Y,Z) :- mere(Y,X), pere(Z,X).
+
+?- parents(enzo,A,B).
+--->
+A=marie,
+B=stephane.
+
+----------------------------------------------------------------------------------------
+
 5)
+siblings(X,Y) :- mere(_,X), mere(_,Y), pere(_,X), pere(_,Y).
+grandpere(X,Y) :- pere(Z,Y), pere(X,Z).
+
+?- siblings(X,Y).
+--->
+X = Y, Y = enzo ;
+X = enzo,
+Y = stessie ;
+X = enzo,
+Y = kelly ;
+X = stessie,
+Y = enzo ;
+X = Y, Y = stessie ;
+X = stessie,
+Y = kelly ;
+X = kelly,
+Y = enzo ;
+X = kelly,
+Y = stessie ;
+X = Y, Y = kelly.
+
+?- grandpere(X,Y).
+--->
+X = bernard,
+Y = enzo ;
+X = bernard,
+Y = stessie ;
+X = bernard,
+Y = kelly ;
+false.
+
+----------------------------------------------------------------------------------------
+
 6)
+ancetre(X,Y) :- parent(X,Y) (Initialisation)
+ancetre(X,Y) :- parent(X,Z), ancetre(Y,Z). (Recursion)
+
+?- ancetre(X,Y).
+--->
+X = stephane,
+Y = enzo ;
+X = stephane,
+Y = stessie ;
+X = stephane,
+Y = kelly ;
+X = bernard,
+Y = stephane ;
+X = marie,
+Y = enzo ;
+X = marie,
+Y = stessie ;
+X = marie,
+Y = kelly ;
+X = bernard, (trouve les grands parents sans faire intervenir grandpere())
+Y = enzo ;
+X = bernard,
+Y = stessie ;
+X = bernard,
+Y = kelly ;
+false.
+
+Test en ajoutant pere(august, stephane)
+?- ancetre(X,Y).
+--->
+X = stephane,
+Y = enzo ;
+X = stephane,
+Y = stessie ;
+X = stephane,
+Y = kelly ;
+X = bernard,
+Y = stephane ;
+X = august,
+Y = stephane ;
+X = marie,
+Y = enzo ;
+X = marie,
+Y = stessie ;
+X = marie,
+Y = kelly ;
+X = bernard,
+Y = enzo ;
+X = bernard,
+Y = stessie ;
+X = bernard,
+Y = kelly ;
+X = august,
+Y = enzo ;
+X = august,
+Y = stessie ;
+X = august,
+Y = kelly ;
+false.
 
 ========================================================================================
 
 Exercice 5 :
 
 1)
+et(0,0,0).
+et(0,1,0).
+et(1,0,0).
+et(1,1,1).
+ou(0,0,0).
+ou(0,1,1).
+ou(1,0,1).
+ou(1,1,1).
+non(0,1).
+non(1.0).
+xor(0,0,0).
+xor(0,1,1).
+xor(1,0,1).
+xor(1,1,0).
+
+----------------------------------------------------------------------------------------
+
 2)
+?- et(X,Y,1).
+---> X = Y, Y = 1.
+
+?- ou(X,Y,1).
+--->
+X = 0,
+Y = 1 ;
+X = 1,
+Y = 0 ;
+X = Y, Y = 1.
+
+?- non(X,1).
+--->
+X = 0.
+
+?- et(0,0,R).
+R = 0 ;
+false.
+
+?- et(X,Y,R).
+--->
+X = Y, Y = R, R = 0 ;
+X = R, R = 0,
+Y = 1 ;
+X = 1,
+Y = R, R = 0 ;
+X = Y, Y = R, R = 1.
+
+----------------------------------------------------------------------------------------
+
 3)
-4)
+circuit(X,Y,Z) :- et(X,Y,A), non(A,B), non(X,C), xor(B,C,D), non(D,Z).
+
+----------------------------------------------------------------------------------------
+
+4) 
+Pour construire la table de vérité :
+?- circuit(X,Y,0)
+--->
+X = 1,
+Y = 0 ;
+false.
+?- circuit(X,Y,1)
+--->
+X = Y, Y = 0 ;
+X = 0,
+Y = 1 ;
+X = Y, Y = 1 ;
+false.
+
+X	Y	Z
+0	0	1
+0	1	1
+1	0	0
+1	1	0
+
+
+----------------------------------------------------------------------------------------
+
 5)
+?- circuit(0,Y,0).
+--->
+false.
+
+?- circuit(0,Y,1).
+--->
+Y = 0 ;
+Y = 1.
+
+?- circuit(X,0,0).
+--->
+X = 1 ;
+false.
+
+?- circuit(X,0,1).
+--->
+X = 0 ;
+false.
+
+?- circuit(1,1,Z).
+--->
+Z = 1 ;
+false.
+
+?- circuit(0,0,Z).
+--->
+Z = 1 ;
+false.
