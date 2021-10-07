@@ -2,72 +2,6 @@ Durand Enzo / Kordon Djeser
 
 ========================================================================================
 
-Exercice 1 :
-
-1)
-
-2) 
-?- r(f(f(a)),b). 
----> true.
-Avec la trace on voit que le compilateur pose X=f(a) dans r et X=a dans p et conclu true.
-
-
-?- p(f(a),b) 
----> true
-Avec la trace on voit qu'il pose X=a dans p et conclu true.
-
-========================================================================================
-
-Exercice 2 :
-
-1) 
-
-----------------------------------------------------------------------------------------
-
-2)
-?- q(X,b) 
----> X=b;X=a;false.
-- Avec la trace on peut voir que le compilateur test q avec X=_4084 et Z=b, il trouve donc que X=b.
-- Ensuite il test q avec X=_4074 et Z=b encore une fois, puis r avec a=_4074 et b=_4292. Il essaie donc r(a,b), q(b,b), q(b,b) et q(a,b) et trouve X=a.
-- Il tente ensuie q avec X=b et r avec a=b et b=_4292. Il fail et arrive a q avec X=_4074 et Z=b mais fail encore et conclu false.
-
-?- q(b,X) 
----> X=b;false.
-- Avec la trace on peut voir que le compilateur test q avec X=b et Z=_4076, il conclu que X=b.
-- Il test q avec X=b, Z=_4076 puis r avec a=b et b=_4292, il conclu false.
-
-========================================================================================
-
-Exercice 3 :
-
-1)
-Les etudiants serieux revisent leurs examens. 
----> revise(exa) :- serieux(etu)
-Un etudiant consciencieux fait toujours ses devoirs pour le lendemain. 
----> devoir(etu) :- consciencieux(etu)
-Les etudiants qui revisent leurs examens reussissent. 
----> reussir(etu) :- revise(etu)
-Les etudiants qui font leurs devoirs pour le lendemain sont serieux. 
----> serieux(etu) :- devoir(etu)
-Pascal et Zoe sont des etudiants consciencieux.
----> consciencieux(Pascal)
----> consciencieux(Zoe)
-
-----------------------------------------------------------------------------------------
-
-2) 
-Qui va reussir ?
-?- reussir(X)
-
-----------------------------------------------------------------------------------------
-
-3)
-?- reussir(X)
-X=zoe;
-X=pascal.
-
-========================================================================================
-
 Exercice 4 :
 
 1)
@@ -332,3 +266,71 @@ false.
 --->
 Z = 1 ;
 false.
+
+========================================================================================
+
+Exercice 1 :
+
+1)
+
+2) 
+?- r(f(f(a)),b). 
+---> true.
+Avec la trace on voit que le compilateur pose X=f(a) dans r et X=a dans p et conclu true.
+
+
+?- p(f(a),b) 
+---> true
+Avec la trace on voit qu'il pose X=a dans p et conclu true.
+
+========================================================================================
+
+Exercice 2 :
+
+1) 
+
+----------------------------------------------------------------------------------------
+
+2)
+?- q(X,b) 
+---> X=b;X=a;false.
+- Avec la trace on peut voir que le compilateur test q avec X=_4084 et Z=b, il trouve donc que X=b.
+- Ensuite il test q avec X=_4074 et Z=b encore une fois, puis r avec a=_4074 et b=_4292. Il essaie donc r(a,b), q(b,b), q(b,b) et q(a,b) et trouve X=a.
+- Il tente ensuie q avec X=b et r avec a=b et b=_4292. Il fail et arrive a q avec X=_4074 et Z=b mais fail encore et conclu false.
+
+?- q(b,X) 
+---> X=b;false.
+- Avec la trace on peut voir que le compilateur test q avec X=b et Z=_4076, il conclu que X=b.
+- Il test q avec X=b, Z=_4076 puis r avec a=b et b=_4292, il conclu false.
+
+========================================================================================
+
+Exercice 3 :
+
+1)
+Les etudiants serieux revisent leurs examens. 
+---> revise(exa) :- serieux(etu)
+Un etudiant consciencieux fait toujours ses devoirs pour le lendemain. 
+---> devoir(etu) :- consciencieux(etu)
+Les etudiants qui revisent leurs examens reussissent. 
+---> reussir(etu) :- revise(etu)
+Les etudiants qui font leurs devoirs pour le lendemain sont serieux. 
+---> serieux(etu) :- devoir(etu)
+Pascal et Zoe sont des etudiants consciencieux.
+---> consciencieux(Pascal)
+---> consciencieux(Zoe)
+
+----------------------------------------------------------------------------------------
+
+2) 
+Qui va reussir ?
+?- reussir(X)
+
+----------------------------------------------------------------------------------------
+
+3)
+?- reussir(X)
+X=zoe;
+X=pascal.
+
+========================================================================================
