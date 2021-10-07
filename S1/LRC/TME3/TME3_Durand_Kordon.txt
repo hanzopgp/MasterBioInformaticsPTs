@@ -128,7 +128,7 @@ B=stephane.
 ----------------------------------------------------------------------------------------
 
 5)
-siblings(X,Y) :- mere(_,X), mere(_,Y), pere(_,X), pere(_,Y).
+siblings(X,Y) :- mere(,X), mere(,Y), pere(,X), pere(,Y), X==Y.
 grandpere(X,Y) :- pere(Z,Y), pere(X,Z).
 
 ?- siblings(X,Y).
@@ -162,8 +162,8 @@ false.
 ----------------------------------------------------------------------------------------
 
 6)
-ancetre(X,Y) :- parent(X,Y) (Initialisation)
-ancetre(X,Y) :- parent(X,Z), ancetre(Y,Z). (Recursion)
+ancetre(X,Y) :- parent(X,Y). (Initialisation)
+ancetre(X,Y) :- parent(X,Z), ancetre(Z,Y), X==Y. (Recursion)
 
 ?- ancetre(X,Y).
 --->
@@ -236,7 +236,7 @@ ou(0,1,1).
 ou(1,0,1).
 ou(1,1,1).
 non(0,1).
-non(1.0).
+non(1,0).
 xor(0,0,0).
 xor(0,1,1).
 xor(1,0,1).
@@ -299,8 +299,7 @@ X	Y	Z
 0	0	1
 0	1	1
 1	0	0
-1	1	0
-
+1	1	1
 
 ----------------------------------------------------------------------------------------
 
