@@ -27,6 +27,17 @@ S. cerevisiae possède le gène TRP1 mais ce gène a subit une mutation qui le r
 
 b. Etude d’un gène humain impliqué dans la voie de biosynthèse du glutamate : le gène de la N-acetylglutamate synthase (NAGS)
 
+Il y a plusieurs protéines possibles qui different suivant l'epissage. En effet la séquence ADN de NAGS est composée d'introns et d'exons. Les rectangles sont les exons et les parties entre ceux-ci sont les introns. Les exons ayant une partie non-colorée representent les UTR (avant un ATG ou après un codon stop).
+NAGS-202 commence plus tard que NAGS-201, son UTR est plus petit mais le reste est identique.
 
+[ADN] --ARNpolymerase--> [ARNpm] --suppression d'introns--> [ARNm] --ARNt/ribosomes--> [protéine]
+
+Cette différence de taille entre les 2 UTR s'explique par le fait qu'il y ait 2 régions pouvant attirer l'ARN polymerase, ici on observe les deux cas avec NAGS-201 et NAGS-202. L'ARN polymerase peut donc produire plusieurs ARN messager différents, ce qui augmente encore la complexité du génome eucaryote.
+Le premier exon est différent entre NAGS-201 et NAGS-202, ce ne seront donc pas les mêmes protéines.
+
+NAGS-203 est très différent des deux autres. Une partie intron de NAGS-201/NAGS-202 est un exon pour NAGS-203. Il manque aussi les introns/exons du début.
+La transcription a peut être démarré à un autre endroit pour NAGS-203. Un phénomène d'epissage alternatif a aussi eu lieu, on conserve l'intron numéro 4. Un intron se définit que par rapport à un ARN messager ! Si on a différent ARN messager on a différente séquence codante possible, amenant à plusieurs protéines différentes. L'ensemble des exons n'étant pas colorée NAGS-203 ne produira pas de protéine dans ce cas. 
+
+Tout n'est pas optimisé dans ce système, la transcription commence un peu n'importe ou dans le génome (mais plus souvent la ou il y a des promoteurs). La cellule peut détruire les ARN messagers inutiles. 
 
 ===================================================================================================
