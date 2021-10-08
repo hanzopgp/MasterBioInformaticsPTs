@@ -1,61 +1,76 @@
-LOCUS       NAGS_DNA                4515 bp ds-DNA     linear       16-JUL-2018
+LOCUS       AAGB_TD_3fonct_N        4515 bp    DNA        linear       08-OCT-2021
 DEFINITION  .
 ACCESSION   
 VERSION     
 SOURCE      .
   ORGANISM  .
 COMMENT     
-COMMENT     
 COMMENT     ApEinfo:methylated:1
 FEATURES             Location/Qualifiers
      misc_feature    545..1091
-                     /label=intron1
-                     /ApEinfo_fwdcolor=cyan
-                     /ApEinfo_revcolor=green
-                     /ApEinfo_graphicformat=arrow_data {{0 1 2 0 0 -1} {} 0}
-                     width 5 offset 0
+                     /locus_tag="intron1"
+                     /label="intron1"
+                     /ApEinfo_label="intron1"
+                     /ApEinfo_fwdcolor="cyan"
+                     /ApEinfo_revcolor="green"
+                     /ApEinfo_graphicformat="arrow_data {{0 1 2 0 0 -1} {} 0}
+                     width 5 offset 0"
      misc_feature    1367..1478
-                     /label=intron2
-                     /ApEinfo_fwdcolor=cyan
-                     /ApEinfo_revcolor=green
-                     /ApEinfo_graphicformat=arrow_data {{0 1 2 0 0 -1} {} 0}
-                     width 5 offset 0
+                     /locus_tag="intron2"
+                     /label="intron2"
+                     /ApEinfo_label="intron2"
+                     /ApEinfo_fwdcolor="cyan"
+                     /ApEinfo_revcolor="green"
+                     /ApEinfo_graphicformat="arrow_data {{0 1 2 0 0 -1} {} 0}
+                     width 5 offset 0"
      misc_feature    1693..1983
-                     /label=intron3
-                     /ApEinfo_fwdcolor=cyan
-                     /ApEinfo_revcolor=green
-                     /ApEinfo_graphicformat=arrow_data {{0 1 2 0 0 -1} {} 0}
-                     width 5 offset 0
+                     /locus_tag="intron3"
+                     /label="intron3"
+                     /ApEinfo_label="intron3"
+                     /ApEinfo_fwdcolor="cyan"
+                     /ApEinfo_revcolor="green"
+                     /ApEinfo_graphicformat="arrow_data {{0 1 2 0 0 -1} {} 0}
+                     width 5 offset 0"
      misc_feature    2165..2777
-                     /label=intron4
-                     /ApEinfo_fwdcolor=cyan
-                     /ApEinfo_revcolor=green
-                     /ApEinfo_graphicformat=arrow_data {{0 1 2 0 0 -1} {} 0}
-                     width 5 offset 0
+                     /locus_tag="intron4"
+                     /label="intron4"
+                     /ApEinfo_label="intron4"
+                     /ApEinfo_fwdcolor="cyan"
+                     /ApEinfo_revcolor="green"
+                     /ApEinfo_graphicformat="arrow_data {{0 1 2 0 0 -1} {} 0}
+                     width 5 offset 0"
      misc_feature    2950..3045
-                     /label=intron5
-                     /ApEinfo_fwdcolor=cyan
-                     /ApEinfo_revcolor=green
-                     /ApEinfo_graphicformat=arrow_data {{0 1 2 0 0 -1} {} 0}
-                     width 5 offset 0
+                     /locus_tag="intron5"
+                     /label="intron5"
+                     /ApEinfo_label="intron5"
+                     /ApEinfo_fwdcolor="cyan"
+                     /ApEinfo_revcolor="green"
+                     /ApEinfo_graphicformat="arrow_data {{0 1 2 0 0 -1} {} 0}
+                     width 5 offset 0"
      misc_feature    3229..3902
-                     /label=intron6
-                     /ApEinfo_fwdcolor=cyan
-                     /ApEinfo_revcolor=green
-                     /ApEinfo_graphicformat=arrow_data {{0 1 2 0 0 -1} {} 0}
-                     width 5 offset 0
+                     /locus_tag="intron6"
+                     /label="intron6"
+                     /ApEinfo_label="intron6"
+                     /ApEinfo_fwdcolor="cyan"
+                     /ApEinfo_revcolor="green"
+                     /ApEinfo_graphicformat="arrow_data {{0 1 2 0 0 -1} {} 0}
+                     width 5 offset 0"
      misc_feature    119..121
-                     /label=ATG initiateur
-                     /ApEinfo_fwdcolor=#e1031e
-                     /ApEinfo_revcolor=green
-                     /ApEinfo_graphicformat=arrow_data {{0 1 2 0 0 -1} {} 0}
-                     width 5 offset 0
+                     /locus_tag="ATG initiateur"
+                     /label="ATG initiateur"
+                     /ApEinfo_label="ATG initiateur"
+                     /ApEinfo_fwdcolor="#e1031e"
+                     /ApEinfo_revcolor="green"
+                     /ApEinfo_graphicformat="arrow_data {{0 1 2 0 0 -1} {} 0}
+                     width 5 offset 0"
      misc_feature    4148..4150
-                     /label=STOP
-                     /ApEinfo_fwdcolor=#e1031e
-                     /ApEinfo_revcolor=green
-                     /ApEinfo_graphicformat=arrow_data {{0 1 2 0 0 -1} {} 0}
-                     width 5 offset 0
+                     /locus_tag="STOP"
+                     /label="STOP"
+                     /ApEinfo_label="STOP"
+                     /ApEinfo_fwdcolor="#e1031e"
+                     /ApEinfo_revcolor="green"
+                     /ApEinfo_graphicformat="arrow_data {{0 1 2 0 0 -1} {} 0}
+                     width 5 offset 0"
 ORIGIN
         1 CCTGTCCGGA CCCCGCCCCG ACCAGGTCCA GCCCCGCCCA ACGGCAAGTT AAGAGCCCCC
        61 CAGTGCCAGA CGCTCCAGAC AGACTGCCAC TCTTGGGGGG CAAGAGTTGG TTGTCGTCAT
