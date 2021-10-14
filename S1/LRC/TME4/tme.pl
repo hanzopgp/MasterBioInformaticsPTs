@@ -41,25 +41,40 @@ L2 peut prendre la forme d'une liste exprime avec head et tail.
 
 /* Exercice 2 */
 
-xadd([X|Xs],Y,[X|Xs2]) :- xadd(Xs,Y,Xs2).
-xadd([],_,[]).
+xadd([X|L1],Y,[X|Lres]) :- xadd(L1,Y,Lres).
+xadd([],X,[X]).
+xadd(X,[],[X]).
 
-xdelete([X|Xs],Y,[X|Xs2]) :- X\==Y, xdelete(Xs,Y,Xs2).
-xdelete([X|Xs],X,Xs2) :- xdelete(Xs,X,Xs2).
+xdelete([X|L1],Y,[X|Lres]) :- X\==Y, xdelete(L1,Y,Lres).
+xdelete([X|L1],X,Lres) :- xdelete(L1,X,Lres).
 xdelete([],_,[]).
 
-/*xreverse([X|Xs],[X|Xs2]) :- xreverse(Xs2,Xs).*/
-xreverse([X|Xs], Z) :- xreverse(Xs, T), xadd(T, [X], Z).
+xreverse([X|L1], Lres) :- xreverse(L1, TMP), xadd(TMP, X, Lres).
 xreverse([],[]).
 
-/*xconcatene([_|Xs],Y,Z) :- xadd(Xs,Y,Z). 
+xconcatene([X|L1],L2,[X|Lres]) :- xconcatene(L1,L2,Lres). 
+xconcatene([],X,X).
+xconcatene(X,[],X).
 
-xinverse(L1,L2) :- L2 is [A | B].
-
-xsupprime(X,Y,Z) :- .
-
-xfiltre(L1,L2,L3) :- .*/
+xfiltre([X|L1],[_|L2],Lres) :- xdelete(L1,X,TMP), xfiltre(TMP,L2,Lres).
+xfiltre(X,[],X).
+xfiltre([],_,[]).
 
 /*====================================================================*/
 
 /* Exercice 3 */
+
+listeeq([X|_],[_|L2]) :- listeeq(X,L2).
+listeeq(X,Y) :- X=Y.
+
+palindrome(L1) :- xreverse(L1,L1).
+
+/*last([_|L1], LAST) :- last(L1,LAST).
+last([X], X). 
+
+palindrome2([_|L1]) :- palindrome2(L1).
+palindrome2([X|L1]) :- last(L1)\==X.*/
+
+palindrome2([]).
+palindrome2([_]).
+palindrome2([X|L1]) :- xconcatene(TMP, [X], L1), palindrome2(TMP).
