@@ -27,13 +27,13 @@
 
 \title{Devoir Maison} % Assignment title
 
-\author{Durand Enzo} % Student name
+\author{Durand Enzo 21107517} % Student name
 
 \date{November 24th, 2021} % Due date
 
 \institute{Sorbonne Université} % Institute or school name
 
-\class{Algorithmes sur les arbres et les graphes en bio-informatique et reconnaissance des formes (AAGB)} % Course or class name
+\class{Algorithmes sur les arbres et les graphes en bio-informatique (AAGB)} % Course or class name
 
 %\professor{Dr. Albert Einstein} % Professor or teacher in charge of the assignment
 
@@ -80,9 +80,9 @@
 \begin{center}
 	\begin{itemize}
 		\item L'orthologie est le lien évolutif entre deux gènes présents chez deux espèces différentes. On dit de deux séquences qu'elles sont orthologues si elles descendent d'une séquence unique présente chez leur dernier ancêtre commun. Le gène impliqué résulte d'une spéciation.
-		\item La paralogie est le lien évolutif entre deux gènes présents chez deux espèces différentes. On dit de deux séquences qu'elles sont paralogue si elles descendent d'une séquence unique présente chez leur dernier ancêtre commun mais contrairement à l'othologie, le gène impliqué résulte d'une duplication. Ce gène peut donc avoir de nouvelles fonctions.
-		\item L'analogie est une similitude entre deux expressions du phénotype qui ont les mêmes fonctions biologiques chez deux espèces différentes. Ces deux expressions phénotypiques ne viennent pas d'une descendance avec un ancêtre commun.
-		\item L'homologie est un lien évolutif entre expressions phénotypiques de deux espèces différentes, venant d'une descendance avec un ancêtre commun.
+		\item La paralogie est le lien évolutif entre deux gènes présents chez deux espèces différentes. On dit de deux séquences qu'elles sont paralogue si elles descendent d'une séquence unique présente chez leur dernier ancêtre commun mais contrairement à l'othologie, le gène impliqué résulte d'une duplication suivie d'une spéciation. Ce gène peut donc avoir de nouvelles fonctions.
+		\item L'analogie est une similitude entre deux expressions du phénotype qui ont les mêmes fonctions biologiques chez deux espèces différentes. Ces deux expressions phénotypiques ne proviennent pas d'une descendance avec un ancêtre commun. Le gène est donc apparu une fois sur chacun des ancêtres communs des deux espèces.
+		\item L'homologie est un lien évolutif entre expressions phénotypiques de deux espèces différentes, provenant d'une descendance avec un ancêtre commun.
 		\item Il faut chercher les homologies pour pouvoir construire des arbres phylogénétiques afin de mieux comprendre l'évolution de certaines espèces. On peut faire cela avec des algorithmes comme UPGMA ou NJ.
 	\end{itemize}
 \end{center}
@@ -97,7 +97,7 @@
 \begin{center}
 	\begin{itemize}
 		\item L'horloge moléculaire est une hypothèse en biologie selon laquelle les mutations du génome se feraient à vitesse constante. Grâce à cette hypothèse, on peut donc mettre en corrélation le taux de mutation et les divergences génétiques de différentes espèces afin de trouver une chronologie d'apparition des espèces.
-		\item On emploie ce terme pour UPGMA car cet algorithme construit un arbre phylogénétique à partir d'une matrice de distance. Il donne des tailles de branches équivalentes aux différentes espèces proportionnelles à leurs différences de nucléotides. Il construit donc cet arbre en se basant sur l'hypothèse de l'horloge moléculaire.
+		\item On emploie ce terme pour UPGMA car cet algorithme construit un arbre phylogénétique à partir d'une matrice de distance. Il donne des tailles de branches équivalentes aux différentes espèces proportionnellement à leurs écarts de nucléotides. Il construit donc cet arbre en se basant sur l'hypothèse de l'horloge moléculaire.
 	\end{itemize}
 \end{center}
 
@@ -107,14 +107,14 @@
 \begin{center}
 	\begin{itemize}
 		\item Contrairement à UPGMA, l'algorithme NJ permet aux branches de l'arbre phylogénétique de faire des tailles différentes au lieu d'une simple moyenne des distances. 
-		\item Dans la réalité, les espèces ne sont pas soumises aux mêmes pressions de séléction, la théorie de l'horloge moléculaire n'est donc pas très précise. NJ est donc un algorithme plus précis et vraissemblable que UPGMA.
+		\item En réalité, les espèces ne sont pas soumises aux mêmes pressions de séléction, la théorie de l'horloge moléculaire n'est donc pas très précise. Le taux de mutation génétique varie aussi en fonction des différentes parties d'un génome. NJ est donc un algorithme plus précis et plus vraissemblable que UPGMA.
 	\end{itemize}
 \end{center}
 
 \begin{problem}
 	3. Dérouler l'algorithme Neighbour-Joining pour la matrice de distance suivante :
 \begin{center}
-	\includegraphics[width=0.5\columnwidth]{mat1.png}
+	\includegraphics[width=0.3\columnwidth]{mat1.png}
 \end{center}
 \end{problem}
 \begin{center}
@@ -126,7 +126,7 @@
 				\[ u_{b} = \frac{5+5+6}{2} = 8 \]
 				\[ u_{c} = \frac{4+5+3}{2} = 6 \]
 				\[ u_{d} = \frac{7+6+3}{2} = 8 \]
-			\item On calcule ensuite les valeurs Q
+			\item On calcule ensuite les valeurs Q :
 				\[ q_{a,b} = 5-8-8 = -11 \]
 				\[ q_{a,c} = 4-8-6 = -10 \]
 				\[ q_{a,d} = 7-8-8 = -9 \]
@@ -134,7 +134,7 @@
 				\[ q_{b,d} = 5-8-8 = -10 \]
 				\[ q_{c,d} = 3-8-6 = -11 \]
 			\item On choisit la valeur Q minimale : Ici la valeur Q pour a,b.
-			\item On recalcule les distances au nouveau noeud AB:
+			\item On recalcule les distances au nouveau noeud AB :
 				\[ d_{ab,c} = \frac{4+5-5}{2} = 2 \]
 				\[ d_{ab,d} = \frac{7+6-5}{2} = 4 \]	
 			\item On calcule les distances des branches :
@@ -142,7 +142,7 @@
 				\[ d_{b,ab} = \frac{5}{2} + \frac{(8+8)}{2} = 2.5 \]
 			\item Cela nous donne le nouveau tableau :
 				\begin{center}
-					\includegraphics[width=0.5\columnwidth]{mat2.png} 
+					\includegraphics[width=0.27\columnwidth]{mat2.png} 
 				\end{center}
 			\end{itemize}
 		\item Étape 2 :
@@ -151,24 +151,24 @@
 				\[ u_{ab} = \frac{2+4}{1} = 6 \]
 				\[ u_{c} = \frac{2+3}{1} = 5 \]
 				\[ u_{d} = \frac{4+3}{1} = 7 \]
-			\item On calcule ensuite les valeurs Q
+			\item On calcule ensuite les valeurs Q :
 				\[ q_{ab,c} = 2-6-5 = -9 \]
 				\[ q_{ab,d} = 4-6-7 = -9 \]
 				\[ q_{c,d} = 3-7-5 = -9 \]
 			\item On choisit la valeur Q minimale : Ici la valeur Q pour ab,c.
-			\item On recalcule les distances au nouveau noeud ABC:
+			\item On recalcule les distances au nouveau noeud ABC :
 				\[ d_{abc,d} = \frac{3+4-2}{2} = 2.5 \]
 			\item On calcule les distances des branches :
 				\[ d_{ab,abc} = \frac{2}{2} + \frac{(6-5)}{2} = 0.5 \]
 				\[ d_{c,abc} = \frac{2}{2} + \frac{(5-6)}{2} = 1.5 \]
 			\item Cela nous donne le nouveau tableau :
 				\begin{center}
-					\includegraphics[width=0.5\columnwidth]{mat3.png} 
+					\includegraphics[width=0.25\columnwidth]{mat3.png} 
 				\end{center}
 			\end{itemize}
 		\item On peut maintenant construire l'arbre de phylogénétique :
 			\begin{center}
-				\includegraphics[width=0.5\columnwidth]{arbre.png} 
+				\includegraphics[width=0.4\columnwidth]{arbre.png} 
 			\end{center}
 	\end{itemize}
 	\
