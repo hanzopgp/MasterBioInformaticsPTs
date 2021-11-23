@@ -121,12 +121,14 @@
 \begin{itemize}
 		\item Etape 1 :
 			\begin{itemize}
-			\item On calcule d'abord les valeurs U :
+			\item On calcule d'abord les valeurs $u_{i}$ = $\frac{\sum_{ j=0}d_{ij}}{n-2}$ :
+
 				\[ u_{a} = \frac{5+4+7}{2} = 8 \]
 				\[ u_{b} = \frac{5+5+6}{2} = 8 \]
 				\[ u_{c} = \frac{4+5+3}{2} = 6 \]
 				\[ u_{d} = \frac{7+6+3}{2} = 8 \]
-			\item On calcule ensuite les valeurs Q :
+
+			\item On calcule ensuite les valeurs Q : $q_{i,j} = d_{ij} - u_i - u_j$ :
 				\[ q_{a,b} = 5-8-8 = -11 \]
 				\[ q_{a,c} = 4-8-6 = -10 \]
 				\[ q_{a,d} = 7-8-8 = -9 \]
@@ -134,12 +136,15 @@
 				\[ q_{b,d} = 5-8-8 = -10 \]
 				\[ q_{c,d} = 3-8-6 = -11 \]
 			\item On choisit la valeur Q minimale : Ici la valeur Q pour a,b.
-			\item On recalcule les distances au nouveau noeud AB :
+
+			\item On recalcule les distances au nouveau noeud AB $u_{ij,k}$ = $\frac{d_{ij}}{2}$ :
 				\[ d_{ab,c} = \frac{4+5-5}{2} = 2 \]
 				\[ d_{ab,d} = \frac{7+6-5}{2} = 4 \]	
+
 			\item On calcule les distances des branches :
 				\[ d_{a,ab} = \frac{5}{2} + \frac{(8+8)}{2} = 2.5 \]
 				\[ d_{b,ab} = \frac{5}{2} + \frac{(8+8)}{2} = 2.5 \]
+
 			\item Cela nous donne le nouveau tableau :
 				\begin{center}
 					\includegraphics[width=0.27\columnwidth]{mat2.png} 
@@ -170,7 +175,7 @@
 			\begin{center}
 				\includegraphics[width=0.4\columnwidth]{arbre.png} 
 			\end{center}
-		\item Après vérification, on se rend compte que la matrice de distance n'était pas additive ni ultramétrique. Il est donc impossible de construire l'arbre de phylogénétique associé avec NJ. Exemple : La distance entre A et D dans la matrice est de 7. Lorsque l'on regarde le chemin de A a D dans l'arbre on a 2.5+1.5+2.5+2.5 = 9. On ne retombe donc pas sur 7.
+		\item Après vérification, on se rend compte que la matrice de distance n'était pas additive ni ultramétrique. Il est donc impossible d'obtenir les bonnes valeurs pour les branches de l'arbre de phylogénétique associé à NJ. Exemple : La distance entre A et D dans la matrice est de 7. Lorsque l'on regarde le chemin de A a D dans l'arbre on a 2.5+1.5+2.5+2.5 = 9. On ne retombe donc pas sur 7. On a donc une approximation de la taille des branches.
 	\end{itemize}
 	\
 \end{center}
