@@ -170,16 +170,6 @@ Last update: March 2009</description>
         </action>
         <action>
             <action-name>add</action-name>
-            <parameter>w</parameter>
-            <parameter>P</parameter>
-        </action>
-        <action>
-            <action-name>add</action-name>
-            <parameter>v</parameter>
-            <parameter>P</parameter>
-        </action>
-        <action>
-            <action-name>add</action-name>
             <parameter>u</parameter>
             <parameter>PA</parameter>
         </action>
@@ -193,11 +183,75 @@ Last update: March 2009</description>
             <parameter>w</parameter>
             <parameter>PC</parameter>
         </action>
+
+        <!-- Q3 -->
+        <!-- <action> 
+            <action-name>add</action-name>
+            <parameter>u</parameter>
+            <parameter>isItTrue nec B PB</parameter>
+        </action>
+        <action>
+            <action-name>add</action-name>
+            <parameter>v</parameter>
+            <parameter>isItTrue nec B PB</parameter>
+        </action>
         <action>
             <action-name>add</action-name>
             <parameter>w</parameter>
-            <parameter>isItTrue and nec PA nec not PA</parameter> <!-- ICI QU'IL FAUT MODIFIER -->
+            <parameter>isItTrue nec B PB</parameter>
+        </action> -->
+
+        <!-- Q3bis -->
+        <!-- <action> 
+            <action-name>add</action-name>
+            <parameter>u</parameter>
+            <parameter>isItTrue or nec B PB nec B not PB</parameter>
         </action>
+        <action> 
+            <action-name>add</action-name>
+            <parameter>v</parameter>
+            <parameter>isItTrue or nec B PB nec B not PB</parameter>
+        </action>
+        <action> 
+            <action-name>add</action-name>
+            <parameter>w</parameter>
+            <parameter>isItTrue or nec B PB nec B not PB</parameter>
+        </action> -->
+
+        <!-- Q4 -->
+        <!-- <action> 
+            <action-name>add</action-name>
+            <parameter>u</parameter>
+            <parameter>isItTrue nec A not (or nec C PC nec C not PC)</parameter>
+        </action>
+        <action> 
+            <action-name>add</action-name>
+            <parameter>v</parameter>
+            <parameter>isItTrue nec A not (or nec C PC nec C not PC)</parameter>
+        </action>
+        <action> 
+            <action-name>add</action-name>
+            <parameter>w</parameter>
+            <parameter>isItTrue nec A not (or nec C PC nec C not PC)</parameter>
+        </action> -->
+
+        <!-- Q5 -->
+        <!-- <action> 
+            <action-name>add</action-name>
+            <parameter>u</parameter>
+            <parameter>isItTrue and or nec B PB nec B not PB or nec A PB nec A not PB</parameter>
+        </action>
+        <action> 
+            <action-name>add</action-name>
+            <parameter>v</parameter>
+            <parameter>isItTrue and or nec B PB nec B not PB or nec A PB nec A not PB</parameter>
+        </action>
+        <action> 
+            <action-name>add</action-name>
+            <parameter>w</parameter>
+            <parameter>isItTrue and or nec B PB nec B not PB or nec A PB nec A not PB</parameter>
+        </action> -->
+
         <rule-comment/>
     </rule>
     <rule>
