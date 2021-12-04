@@ -21,6 +21,8 @@
 
 \usepackage{enumerate} % To modify the enumerate environment
 
+\usepackage{hyperref} % For links
+
 %----------------------------------------------------------------------------------------
 %	ASSIGNMENT INFORMATION
 %----------------------------------------------------------------------------------------
@@ -47,11 +49,19 @@
 %	ASSIGNMENT CONTENT
 %----------------------------------------------------------------------------------------
 
-\section*{Sujet : analyse d'une base de donnée de bio-informatique}
+\section*{Sujet : analyse d'une base de données en rapport avec la bio-informatique}
 
-Gradient descent is one of the most popular algorithms to perform optimization and by far the most common way to optimize neural networks. At the same time, every state-of-the-art Deep Learning library contains implementations of various algorithms to optimize gradient descent (e.g. lasagne's, caffe's, and keras' documentation). These algorithms, however, are often used as black-box optimizers, as practical explanations of their strengths and weaknesses are hard to come by.
+Lien de la base de données : \href{http://adni.loni.usc.edu/data-samples/data-types/}{ADNI}\\
 
-This blog post aims at providing you with intuitions towards the behaviour of different algorithms for optimizing gradient descent that will help you put them to use. We are first going to look at the different variants of gradient descent. We will then briefly summarize challenges during training. Subsequently, we will introduce the most common optimization algorithms by showing their motivation to resolve these challenges and how this leads to the derivation of their update rules. We will also take a short look at algorithms and architectures to optimize gradient descent in a parallel and distributed setting. Finally, we will consider additional strategies that are helpful for optimizing gradient descent.
+ADNI (Alzheimer's Disease Neuroimaging Initiative) est un projet d'étude créé afin de mieux comprendre la maladie d'Alzheimer. C'est une maladie neuro-dégénérative qui a pour symptome une perte de la mémoire et une dégénerescence des capacités intellectuelles (aphasie, apraxie, agnosie \textit{etc}...). Cette maladie peut être due a des prédispositions familiales mais aussi plusieurs facteurs de risques dont l'âge, l'hypertension artérielle, le surpoids, le tabagisme \textit{etc}.... Ce projet s'interesse principalemment au depistage de la maladie afin de prévoir un traitement rapide. Il peut donc être intéréssant d'étudier Alzheimer de différentes facons :
+
+\begin{itemize}
+\item La première est une approche génétique basée sur l'analyse de sequences ADN. Il est possible d'utiliser des techniques d'alignement de séquence pour trouver des similitudes entre les différents patients atteints de la maladie. Il est aussi possible de trouver des portions de sequence qui diffèrent suivant si le sujet est atteint d'Alzheimer, cela permet de detecter les zones en relation directe avec cette maladie. La partie \textbf{genetic} de la base de données est donc utile pour ces études.
+\item Une seconde approche est l'analyse des données comprenant les facteurs de risques. Les dernières techniques de régression ou encore de deep learning peuvent être très performantes pour analyser des données tabulaires. Avec cette base de données, il est possible d'entraîner des réseaux de neurones avec en entrée les différents facteurs de risques et en sortie une prédiction binaire : sain ou malade. La partie \textbf{clinical} et \textbf{biospecimen} pourra nous être utile pour constituer nos données.
+\item La dernière est une analyse de données d'imagerie. En effet Alzheimer est une maladie neuro-dégénérative, ce qui implique qu'on peut observer des IRM (Imagerie par Résonance Magnétique) et des TEP (Tomographie par Émission de Positons) afin de la detecter. Pour ce type d'analyse, le deep learning est encore une solution très performante. On peut utiliser des réseaux de neurones convolutifs avec en entrée des images sous la forme de matrice représentant les pixels et en sortie une prédiction binaire : sain ou malade. Des techniques d'analyse d'image peuvent permettre d'améliorer nos données afin d'obtenir de meilleurs prédictions ou encore d'augmenter le nombre de données. C'est donc la partie \textbf{MRI image} et \textbf{PET image} qui va nous interesser pour ce problème.
+\end{itemize}
+
+En combinant ces différentes techniques d'analyse et donc ces différents modèles, on peut obtenir un super-modèle très performants dans la detection de la maladie. On peut ensuite utiliser nos études sur la prédiction de la maladie afin d'affiner nos connaissances sur Alzheimer. Ce projet a pour avantage d'avoir une base de données très diversifiée. Il est difficile de trouver des défauts car les données sont aussi quantitatives que qualitatives. Cependant pour certaines d'entre elles il y a un nombre d'exemples probablement trop faible pour la phase d'apprentissage des algorithmes de deep learning que nous pourrions utiliser.
 
 %------------------------------------------------
 
