@@ -1,0 +1,25 @@
+--> kcal :
+
+petit dej : 0
+sandwhich : 700
+religieuse : 250
+escalope : 200
+creme : 350
+riz : 600
+monster x2 : 350
+gateaux : 500
+shaker x2 : 400
+total : ~3400 kcal
+
+--> proteine :
+
+petit dej : 0
+sandwhich : 25
+religieuse : 5
+escalope : 27
+creme : 4
+riz : 14
+monster x2 : 0
+gateaux : 6.5
+shaker x2 : 50
+total : ~130g
