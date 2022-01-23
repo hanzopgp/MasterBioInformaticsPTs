@@ -13,12 +13,6 @@ MasterBioInformaticsPTs/
 │     ├── MAPSI/     (Modèles et algorithmes de probabilités et statistiques pour l'informatique)
 │     ├── MM062/     (Systèmes dynamiques discrets et continus en biologie et médecine)
 |     └── BIMA/      (Bases du traitement des images)
-├── S2/
-│     ├── PROJET/    (Projet de recherche en partenariat avec un laboratoire)  
-│     ├── SBAS/      (Statistiques en bioinformatique et algorithmes sur les séquences)
-│     ├── MMCN/      (Modèles mathématiques et computationnels en neurosciences)   
-│     ├── MV418/     (Les acides nucléiques : de la molécule unique à la cellule)
-│     └── ML/        (Machine learning)
 ├── README.md		          
 └── LICENCE  
 </pre></code>
